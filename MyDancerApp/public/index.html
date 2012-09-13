@@ -33,53 +33,63 @@ Specification for version "v1".
 <h3>IN url</h3>
 <pre>GET /<i>version</i>/config</pre>
 <h3>IN url params</h3>
--
+<i>none</i>
 <h3>IN data</h3>
--
+<i>none</i>
 <h3>OUT</h3>
 -
+<h3>Examples</h3>
+<a href="http://api.kwasr.net/v1/config">http://api.kwasr.net/v1/config</a>
 
 <h2>Getting new user challenge</h2>
 <h3>IN url</h3>
 <pre>GET /<i>version</i>/new_user_challenge</pre>
 <h3>IN url params</h3>
--
+<i>none</i>
 <h3>IN data</h3>
--
+<i>none</i>
 <h3>OUT</h3>
 -
+<h3>Examples</h3>
+<a href="http://api.kwasr.net/v1/new_user_challenge">http://api.kwasr.net/v1/new_user_challenge</a>
 
 <h2>Getting event list</h2>
 	<h3>IN url</h3>
 	<pre>GET /<i>version</i>/<i>lang</i>/events</pre>
 	<h3>IN url params</h3>
-	-
+	<i>none</i>
 	<h3>IN data</h3>
-	-
+	<i>none</i>
 <h3>OUT</h3>
 -
+<h3>Examples</h3>
+<a href="http://api.kwasr.net/v1/nl/events">http://api.kwasr.net/v1/nl/events</a>
 
 <h2>Getting event with details</h2>
 This returns all the location details, all feature details and all showing details.
 	<h3>IN url</h3>
 	<pre>GET /<i>version</i>/<i>lang</i>/event/<i>event_id</i></pre>
 	<h3>IN url params</h3>
-	-
+	<i>none</i>
 	<h3>IN data</h3>
-	-
+	<i>none</i>
 <h3>OUT</h3>
 -
+<h3>Examples</h3>
+<a href="http://api.kwasr.net/v1/nl/event/2">http://api.kwasr.net/v1/nl/event/2</a>
 
 <h2>Getting user with posts</h2>
 This returns all the user details and all post details. The posts are for all events, so the client will have to filter. In the future, we can add (optional) filters on date and/or event.
 	<h3>IN url</h3>
 	<pre>GET /<i>version</i>/<i>lang</i>/user/<i>user_id</i></pre>
-	<h3>IN url params</h3>
+		<h3>IN url params</h3>
+		<i>none</i>
+		<h3>IN data</h3>
+		<i>none</i>
+	<h3>OUT</h3>
 	-
-	<h3>IN data</h3>
-	-
-<h3>OUT</h3>
--
+	<h3>Examples</h3>
+	<a href="http://api.kwasr.net/v1/nl/user/2">http://api.kwasr.net/v1/nl/user/2</a>
 
 <div id="footer">
 	<hr />
