@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{REQUEST_URI} !^/?MyDancerApp/public/dispatch.fcgi
+RewriteRule ^(.*)$ MyDancerApp/public/dispatch.fcgi/$1 [PT,L]

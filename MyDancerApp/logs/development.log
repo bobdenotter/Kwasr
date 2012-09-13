@@ -1,0 +1,640 @@
+[8437]  core @0.000011> loading Dancer::Handler::PSGI handler in /usr/local/share/perl5/Dancer/Handler.pm l. 45
+[8437]  core @0.004415> loading handler 'Dancer::Handler::PSGI' in /usr/local/share/perl5/Dancer.pm l. 474
+[8437]  core @0.000141> request: GET /nl/ from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8437]  core @0.000712> [hit #1]Trying to match 'GET /nl/' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8437]  core @0.000875> [hit #1]Trying to match 'GET /nl/' against /^\/test\/$/ (generated from '/test/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8437]  core @0.001021> [hit #1]Trying to match 'GET /nl/' against /^\/([^\/]+)\/$/ (generated from '/:lang/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8437]  core @0.001162> [hit #1]  --> got 1 in /usr/local/share/perl5/Dancer/Route.pm l. 102
+[8437]  core @0.001290> [hit #1]  --> named tokens are: lang in /usr/local/share/perl5/Dancer/Route.pm l. 130
+[8437] debug @0.001763> [hit #1]Adding mysql_enable_utf8 to DBI connection params to enable UTF-8 support in /usr/local/share/perl5/Dancer/Plugin/Database.pm l. 180
+[8437]  core @0.017755> [hit #1]entering before_template_render hook in /usr/local/share/perl5/Dancer/Hook.pm l. 58
+[8437]  core @0.056813> [hit #1]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8437]  core @0.000242> request: GET /css/style.css from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8437]  core @0.003562> [hit #2]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8437]  core @0.000249> request: GET /images/event/small-logo/1.png from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8437]  core @0.001479> [hit #3]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8437]  core @0.000238> request: GET /images/event/small-logo/2.png from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8437]  core @0.001796> [hit #4]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8437]  core @0.000364> request: GET /favicon.ico from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8437]  core @0.001747> [hit #5]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8437]  core @0.000286> request: GET /en/ from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8437]  core @0.001333> [hit #6]Trying to match 'GET /en/' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8437]  core @0.001726> [hit #6]Trying to match 'GET /en/' against /^\/test\/$/ (generated from '/test/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8437]  core @0.002023> [hit #6]Trying to match 'GET /en/' against /^\/([^\/]+)\/$/ (generated from '/:lang/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8437]  core @0.002320> [hit #6]  --> got 1 in /usr/local/share/perl5/Dancer/Route.pm l. 102
+[8437]  core @0.002742> [hit #6]  --> named tokens are: lang in /usr/local/share/perl5/Dancer/Route.pm l. 130
+[8437]  core @0.005122> [hit #6]entering before_template_render hook in /usr/local/share/perl5/Dancer/Hook.pm l. 58
+[8437]  core @0.016193> [hit #6]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8437]  core @0.000236> request: GET /css/style.css from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8437]  core @0.001688> [hit #7]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8437]  core @0.000296> request: GET /images/event/small-logo/1.png from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8437]  core @0.001956> [hit #8]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8437]  core @0.000265> request: GET /images/event/small-logo/2.png from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8437]  core @0.001619> [hit #9]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8459]  core @0.000017> loading Dancer::Handler::PSGI handler in /usr/local/share/perl5/Dancer/Handler.pm l. 45
+[8459]  core @0.007958> loading handler 'Dancer::Handler::PSGI' in /usr/local/share/perl5/Dancer.pm l. 474
+[8459]  core @0.000283> request: GET /nl/ from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8459]  core @0.001212> [hit #1]Trying to match 'GET /nl/' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8459]  core @0.001478> [hit #1]Trying to match 'GET /nl/' against /^\/test\/$/ (generated from '/test/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8459]  core @0.001719> [hit #1]Trying to match 'GET /nl/' against /^\/([^\/]+)\/$/ (generated from '/:lang/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8459]  core @0.002046> [hit #1]  --> got 1 in /usr/local/share/perl5/Dancer/Route.pm l. 102
+[8459]  core @0.002259> [hit #1]  --> named tokens are: lang in /usr/local/share/perl5/Dancer/Route.pm l. 130
+[8459] debug @0.002956> [hit #1]Adding mysql_enable_utf8 to DBI connection params to enable UTF-8 support in /usr/local/share/perl5/Dancer/Plugin/Database.pm l. 180
+[8459]  core @0.030728> [hit #1]entering before_template_render hook in /usr/local/share/perl5/Dancer/Hook.pm l. 58
+[8459]  core @0.048180> [hit #1]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8459]  core @0.000397> request: GET /css/style.css from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8459]  core @0.006426> [hit #2]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8459]  core @0.000248> request: GET /images/event/small-logo/1.png from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8459]  core @0.001858> [hit #3]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8459]  core @0.000309> request: GET /images/event/small-logo/2.png from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8459]  core @0.001884> [hit #4]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8497]  core @0.000016> loading Dancer::Handler::PSGI handler in /usr/local/share/perl5/Dancer/Handler.pm l. 45
+[8497]  core @0.007999> loading handler 'Dancer::Handler::PSGI' in /usr/local/share/perl5/Dancer.pm l. 474
+[8497]  core @0.000272> request: GET /nl/ from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8497]  core @0.001189> [hit #1]Trying to match 'GET /nl/' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8497]  core @0.001458> [hit #1]Trying to match 'GET /nl/' against /^\/test\/$/ (generated from '/test/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8497]  core @0.001729> [hit #1]Trying to match 'GET /nl/' against /^\/([^\/]+)\/$/ (generated from '/:lang/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8497]  core @0.001989> [hit #1]  --> got 1 in /usr/local/share/perl5/Dancer/Route.pm l. 102
+[8497]  core @0.002320> [hit #1]  --> named tokens are: lang in /usr/local/share/perl5/Dancer/Route.pm l. 130
+[8497] debug @0.002968> [hit #1]Adding mysql_enable_utf8 to DBI connection params to enable UTF-8 support in /usr/local/share/perl5/Dancer/Plugin/Database.pm l. 180
+[8497]  core @0.029444> [hit #1]entering before_template_render hook in /usr/local/share/perl5/Dancer/Hook.pm l. 58
+[8497]  core @0.101470> [hit #1]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8497]  core @0.000264> request: GET /css/style.css from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8497]  core @0.005849> [hit #2]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8497]  core @0.000366> request: GET /images/event/small-logo/2.png from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8497]  core @0.001762> [hit #3]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8497]  core @0.000271> request: GET /images/event/small-logo/1.png from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8497]  core @0.001780> [hit #4]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8497]  core @0.000242> request: GET /favicon.ico from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8497]  core @0.001562> [hit #5]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8497]  core @0.000241> request: GET /nl/ from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8497]  core @0.002957> [hit #6]Trying to match 'GET /nl/' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8497]  core @0.003293> [hit #6]Trying to match 'GET /nl/' against /^\/test\/$/ (generated from '/test/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8497]  core @0.003616> [hit #6]Trying to match 'GET /nl/' against /^\/([^\/]+)\/$/ (generated from '/:lang/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8497]  core @0.003944> [hit #6]  --> got 1 in /usr/local/share/perl5/Dancer/Route.pm l. 102
+[8497]  core @0.004188> [hit #6]  --> named tokens are: lang in /usr/local/share/perl5/Dancer/Route.pm l. 130
+[8497]  core @0.006507> [hit #6]entering before_template_render hook in /usr/local/share/perl5/Dancer/Hook.pm l. 58
+[8497]  core @0.017203> [hit #6]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8497]  core @0.000239> request: GET /css/style.css from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8497]  core @0.001777> [hit #7]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8497]  core @0.000246> request: GET /images/event/small-logo/1.png from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8497]  core @0.001517> [hit #8]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8497]  core @0.000350> request: GET /images/event/small-logo/2.png from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8497]  core @0.001724> [hit #9]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8497]  core @0.000355> request: GET /favicon.ico from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8497]  core @0.001687> [hit #10]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8497]  core @0.000400> request: GET /nl/ from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8497]  core @0.001408> [hit #11]Trying to match 'GET /nl/' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8497]  core @0.001793> [hit #11]Trying to match 'GET /nl/' against /^\/test\/$/ (generated from '/test/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8497]  core @0.002063> [hit #11]Trying to match 'GET /nl/' against /^\/([^\/]+)\/$/ (generated from '/:lang/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8497]  core @0.002324> [hit #11]  --> got 1 in /usr/local/share/perl5/Dancer/Route.pm l. 102
+[8497]  core @0.002664> [hit #11]  --> named tokens are: lang in /usr/local/share/perl5/Dancer/Route.pm l. 130
+[8497]  core @0.004919> [hit #11]entering before_template_render hook in /usr/local/share/perl5/Dancer/Hook.pm l. 58
+[8497]  core @0.023326> [hit #11]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8497]  core @0.000341> request: GET /css/style.css from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8497]  core @0.001604> [hit #12]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8497]  core @0.000350> request: GET /images/event/small-logo/1.png from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8497]  core @0.001744> [hit #13]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8497]  core @0.000405> request: GET /images/event/small-logo/2.png from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8497]  core @0.001994> [hit #14]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8497]  core @0.000241> request: GET /favicon.ico from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8497]  core @0.001517> [hit #15]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8501]  core @0.000025> loading Dancer::Handler::PSGI handler in /usr/local/share/perl5/Dancer/Handler.pm l. 45
+[8501]  core @0.007489> loading handler 'Dancer::Handler::PSGI' in /usr/local/share/perl5/Dancer.pm l. 474
+[8501]  core @0.000215> request: GET /nl/ from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8501]  core @0.001094> [hit #1]Trying to match 'GET /nl/' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8501]  core @0.001343> [hit #1]Trying to match 'GET /nl/' against /^\/test\/$/ (generated from '/test/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8501]  core @0.001567> [hit #1]Trying to match 'GET /nl/' against /^\/([^\/]+)\/$/ (generated from '/:lang/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8501]  core @0.001804> [hit #1]  --> got 1 in /usr/local/share/perl5/Dancer/Route.pm l. 102
+[8501]  core @0.002089> [hit #1]  --> named tokens are: lang in /usr/local/share/perl5/Dancer/Route.pm l. 130
+[8501] debug @0.002697> [hit #1]Adding mysql_enable_utf8 to DBI connection params to enable UTF-8 support in /usr/local/share/perl5/Dancer/Plugin/Database.pm l. 180
+[8501]  core @0.026609> [hit #1]entering before_template_render hook in /usr/local/share/perl5/Dancer/Hook.pm l. 58
+[8501]  core @0.092298> [hit #1]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8501]  core @0.000373> request: GET /css/style.css from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8501]  core @0.006011> [hit #2]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8501]  core @0.000389> request: GET /images/event/small-logo/1.png from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8501]  core @0.001870> [hit #3]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8501]  core @0.000345> request: GET /images/event/small-logo/2.png from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8501]  core @0.001745> [hit #4]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8501]  core @0.000247> request: GET /favicon.ico from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8501]  core @0.001613> [hit #5]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8501]  core @0.000350> request: GET /nl/ from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8501]  core @0.001700> [hit #6]Trying to match 'GET /nl/' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8501]  core @0.002222> [hit #6]Trying to match 'GET /nl/' against /^\/test\/$/ (generated from '/test/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8501]  core @0.002623> [hit #6]Trying to match 'GET /nl/' against /^\/([^\/]+)\/$/ (generated from '/:lang/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8501]  core @0.003111> [hit #6]  --> got 1 in /usr/local/share/perl5/Dancer/Route.pm l. 102
+[8501]  core @0.003468> [hit #6]  --> named tokens are: lang in /usr/local/share/perl5/Dancer/Route.pm l. 130
+[8501]  core @0.007192> [hit #6]entering before_template_render hook in /usr/local/share/perl5/Dancer/Hook.pm l. 58
+[8501]  core @0.036097> [hit #6]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8501]  core @0.000326> request: GET /css/style.css from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8501]  core @0.001507> [hit #7]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8501]  core @0.000275> request: GET /images/event/small-logo/2.png from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8501]  core @0.001333> [hit #8]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8501]  core @0.000274> request: GET /images/event/small-logo/1.png from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8501]  core @0.001646> [hit #9]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8501]  core @0.000283> request: GET /favicon.ico from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8501]  core @0.001542> [hit #10]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8501]  core @0.000401> request: GET /en/ from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8501]  core @0.001325> [hit #11]Trying to match 'GET /en/' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8501]  core @0.001682> [hit #11]Trying to match 'GET /en/' against /^\/test\/$/ (generated from '/test/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8501]  core @0.001925> [hit #11]Trying to match 'GET /en/' against /^\/([^\/]+)\/$/ (generated from '/:lang/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8501]  core @0.002159> [hit #11]  --> got 1 in /usr/local/share/perl5/Dancer/Route.pm l. 102
+[8501]  core @0.002548> [hit #11]  --> named tokens are: lang in /usr/local/share/perl5/Dancer/Route.pm l. 130
+[8501]  core @0.004854> [hit #11]entering before_template_render hook in /usr/local/share/perl5/Dancer/Hook.pm l. 58
+[8501]  core @0.023301> [hit #11]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8501]  core @0.000287> request: GET /css/style.css from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8501]  core @0.001723> [hit #12]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8501]  core @0.000254> request: GET /images/event/small-logo/1.png from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8501]  core @0.001742> [hit #13]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8501]  core @0.000233> request: GET /images/event/small-logo/2.png from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8501]  core @0.001503> [hit #14]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8501]  core @0.000334> request: GET /nl/ from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8501]  core @0.001209> [hit #15]Trying to match 'GET /nl/' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8501]  core @0.001475> [hit #15]Trying to match 'GET /nl/' against /^\/test\/$/ (generated from '/test/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8501]  core @0.001717> [hit #15]Trying to match 'GET /nl/' against /^\/([^\/]+)\/$/ (generated from '/:lang/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8501]  core @0.001950> [hit #15]  --> got 1 in /usr/local/share/perl5/Dancer/Route.pm l. 102
+[8501]  core @0.002273> [hit #15]  --> named tokens are: lang in /usr/local/share/perl5/Dancer/Route.pm l. 130
+[8501]  core @0.004360> [hit #15]entering before_template_render hook in /usr/local/share/perl5/Dancer/Hook.pm l. 58
+[8501]  core @0.014487> [hit #15]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8501]  core @0.000231> request: GET /css/style.css from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8501]  core @0.001466> [hit #16]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8501]  core @0.000254> request: GET /images/event/small-logo/1.png from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8501]  core @0.002743> [hit #17]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8501]  core @0.000308> request: GET /images/event/small-logo/2.png from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8501]  core @0.001974> [hit #18]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8505]  core @0.000016> loading Dancer::Handler::PSGI handler in /usr/local/share/perl5/Dancer/Handler.pm l. 45
+[8505]  core @0.008013> loading handler 'Dancer::Handler::PSGI' in /usr/local/share/perl5/Dancer.pm l. 474
+[8505]  core @0.000245> request: GET /images/event/small-logo/1.png from 66.249.72.225 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8505]  core @0.006621> [hit #1]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8569]  core @0.000015> loading Dancer::Handler::PSGI handler in /usr/local/share/perl5/Dancer/Handler.pm l. 45
+[8569]  core @0.007514> loading handler 'Dancer::Handler::PSGI' in /usr/local/share/perl5/Dancer.pm l. 474
+[8569]  core @0.000286> request: GET /nl/ from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8569]  core @0.001199> [hit #1]Trying to match 'GET /nl/' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8569]  core @0.001579> [hit #1]Trying to match 'GET /nl/' against /^\/test\/$/ (generated from '/test/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8569]  core @0.001830> [hit #1]Trying to match 'GET /nl/' against /^\/([^\/]+)\/$/ (generated from '/:lang/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8569]  core @0.002391> [hit #1]  --> got 1 in /usr/local/share/perl5/Dancer/Route.pm l. 102
+[8569]  core @0.002620> [hit #1]  --> named tokens are: lang in /usr/local/share/perl5/Dancer/Route.pm l. 130
+[8569] debug @0.003328> [hit #1]Adding mysql_enable_utf8 to DBI connection params to enable UTF-8 support in /usr/local/share/perl5/Dancer/Plugin/Database.pm l. 180
+[8569]  core @0.028616> [hit #1]entering before_template_render hook in /usr/local/share/perl5/Dancer/Hook.pm l. 58
+[8569]  core @0.098010> [hit #1]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8569]  core @0.000267> request: GET /css/style.css from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8569]  core @0.006175> [hit #2]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8569]  core @0.000336> request: GET /images/event/small-logo/1.png from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8569]  core @0.001847> [hit #3]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8569]  core @0.000312> request: GET /images/event/small-logo/2.png from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8569]  core @0.001602> [hit #4]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8569]  core @0.000369> request: GET /favicon.ico from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8569]  core @0.001683> [hit #5]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8569]  core @0.000274> request: GET /nl/ from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8569]  core @0.001237> [hit #6]Trying to match 'GET /nl/' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8569]  core @0.001592> [hit #6]Trying to match 'GET /nl/' against /^\/test\/$/ (generated from '/test/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8569]  core @0.001836> [hit #6]Trying to match 'GET /nl/' against /^\/([^\/]+)\/$/ (generated from '/:lang/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8569]  core @0.002068> [hit #6]  --> got 1 in /usr/local/share/perl5/Dancer/Route.pm l. 102
+[8569]  core @0.002310> [hit #6]  --> named tokens are: lang in /usr/local/share/perl5/Dancer/Route.pm l. 130
+[8569]  core @0.004849> [hit #6]entering before_template_render hook in /usr/local/share/perl5/Dancer/Hook.pm l. 58
+[8569]  core @0.015791> [hit #6]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8569]  core @0.000280> request: GET /css/style.css from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8569]  core @0.002089> [hit #7]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8569]  core @0.000237> request: GET /images/event/small-logo/1.png from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8569]  core @0.001573> [hit #8]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8569]  core @0.000275> request: GET /images/event/small-logo/2.png from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8569]  core @0.001757> [hit #9]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8569]  core @0.000438> request: GET /favicon.ico from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8569]  core @0.001952> [hit #10]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8569]  core @0.000258> request: GET /nl/ from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8569]  core @0.001176> [hit #11]Trying to match 'GET /nl/' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8569]  core @0.001439> [hit #11]Trying to match 'GET /nl/' against /^\/test\/$/ (generated from '/test/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8569]  core @0.001679> [hit #11]Trying to match 'GET /nl/' against /^\/([^\/]+)\/$/ (generated from '/:lang/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8569]  core @0.002022> [hit #11]  --> got 1 in /usr/local/share/perl5/Dancer/Route.pm l. 102
+[8569]  core @0.002268> [hit #11]  --> named tokens are: lang in /usr/local/share/perl5/Dancer/Route.pm l. 130
+[8569]  core @0.004369> [hit #11]entering before_template_render hook in /usr/local/share/perl5/Dancer/Hook.pm l. 58
+[8569] error @0.023699> [hit #11]request to GET /nl/ crashed: core - template - var.undef error - undefined variable: bullshit at /usr/local/share/perl5/Dancer/Template/Abstract.pm line 130. in /usr/local/share/perl5/Dancer/Handler.pm l. 98
+[8569]  core @0.034534> [hit #11]response: 500 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8569]  core @0.000364> request: GET /css/error.css from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8569]  core @0.001830> [hit #12]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8569]  core @0.000237> request: GET /favicon.ico from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8569]  core @0.001488> [hit #13]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8572]  core @0.000016> loading Dancer::Handler::PSGI handler in /usr/local/share/perl5/Dancer/Handler.pm l. 45
+[8572]  core @0.007288> loading handler 'Dancer::Handler::PSGI' in /usr/local/share/perl5/Dancer.pm l. 474
+[8572]  core @0.000148> request: GET /favicon.ico from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8572]  core @0.006075> [hit #1]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8572]  core @0.000295> request: GET /nl/ from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8572]  core @0.001317> [hit #2]Trying to match 'GET /nl/' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8572]  core @0.001637> [hit #2]Trying to match 'GET /nl/' against /^\/test\/$/ (generated from '/test/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8572]  core @0.001994> [hit #2]Trying to match 'GET /nl/' against /^\/([^\/]+)\/$/ (generated from '/:lang/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8572]  core @0.002307> [hit #2]  --> got 1 in /usr/local/share/perl5/Dancer/Route.pm l. 102
+[8572]  core @0.002607> [hit #2]  --> named tokens are: lang in /usr/local/share/perl5/Dancer/Route.pm l. 130
+[8572] debug @0.003408> [hit #2]Adding mysql_enable_utf8 to DBI connection params to enable UTF-8 support in /usr/local/share/perl5/Dancer/Plugin/Database.pm l. 180
+[8572]  core @0.030365> [hit #2]entering before_template_render hook in /usr/local/share/perl5/Dancer/Hook.pm l. 58
+[8572]  core @0.102452> [hit #2]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8572]  core @0.000388> request: GET /css/style.css from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8572]  core @0.002094> [hit #3]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8572]  core @0.000245> request: GET /images/event/small-logo/1.png from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8572]  core @0.002458> [hit #4]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8572]  core @0.000264> request: GET /images/event/small-logo/2.png from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8572]  core @0.001749> [hit #5]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8572]  core @0.000248> request: GET /favicon.ico from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8572]  core @0.001490> [hit #6]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8572]  core @0.000269> request: GET /nl/ from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8572]  core @0.001251> [hit #7]Trying to match 'GET /nl/' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8572]  core @0.001513> [hit #7]Trying to match 'GET /nl/' against /^\/test\/$/ (generated from '/test/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8572]  core @0.001861> [hit #7]Trying to match 'GET /nl/' against /^\/([^\/]+)\/$/ (generated from '/:lang/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8572]  core @0.002156> [hit #7]  --> got 1 in /usr/local/share/perl5/Dancer/Route.pm l. 102
+[8572]  core @0.002390> [hit #7]  --> named tokens are: lang in /usr/local/share/perl5/Dancer/Route.pm l. 130
+[8572]  core @0.004654> [hit #7]entering before_template_render hook in /usr/local/share/perl5/Dancer/Hook.pm l. 58
+[8572]  core @0.016451> [hit #7]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8572]  core @0.000258> request: GET /css/style.css from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8572]  core @0.001775> [hit #8]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8572]  core @0.000247> request: GET /images/event/small-logo/1.png from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8572]  core @0.001563> [hit #9]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8572]  core @0.000244> request: GET /images/event/small-logo/2.png from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8572]  core @0.001555> [hit #10]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8572]  core @0.000241> request: GET /favicon.ico from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8572]  core @0.001839> [hit #11]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8572]  core @0.000240> request: GET /nl/ from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8572]  core @0.001139> [hit #12]Trying to match 'GET /nl/' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8572]  core @0.001400> [hit #12]Trying to match 'GET /nl/' against /^\/test\/$/ (generated from '/test/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8572]  core @0.001637> [hit #12]Trying to match 'GET /nl/' against /^\/([^\/]+)\/$/ (generated from '/:lang/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8572]  core @0.001945> [hit #12]  --> got 1 in /usr/local/share/perl5/Dancer/Route.pm l. 102
+[8572]  core @0.002159> [hit #12]  --> named tokens are: lang in /usr/local/share/perl5/Dancer/Route.pm l. 130
+[8572]  core @0.004171> [hit #12]entering before_template_render hook in /usr/local/share/perl5/Dancer/Hook.pm l. 58
+[8572]  core @0.014559> [hit #12]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8572]  core @0.000244> request: GET /css/style.css from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8572]  core @0.001499> [hit #13]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8572]  core @0.000347> request: GET /images/event/small-logo/1.png from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8572]  core @0.001736> [hit #14]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8572]  core @0.000288> request: GET /images/event/small-logo/2.png from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8572]  core @0.001766> [hit #15]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8572]  core @0.000248> request: GET /favicon.ico from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8572]  core @0.001835> [hit #16]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8572]  core @0.000241> request: GET /nl/ from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8572]  core @0.001197> [hit #17]Trying to match 'GET /nl/' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8572]  core @0.001566> [hit #17]Trying to match 'GET /nl/' against /^\/test\/$/ (generated from '/test/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8572]  core @0.001841> [hit #17]Trying to match 'GET /nl/' against /^\/([^\/]+)\/$/ (generated from '/:lang/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8572]  core @0.002082> [hit #17]  --> got 1 in /usr/local/share/perl5/Dancer/Route.pm l. 102
+[8572]  core @0.002372> [hit #17]  --> named tokens are: lang in /usr/local/share/perl5/Dancer/Route.pm l. 130
+[8572]  core @0.004727> [hit #17]entering before_template_render hook in /usr/local/share/perl5/Dancer/Hook.pm l. 58
+[8572]  core @0.016237> [hit #17]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8572]  core @0.000253> request: GET /css/style.css from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8572]  core @0.001197> [hit #18]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8572]  core @0.000769> request: GET /images/event/small-logo/1.png from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8572]  core @0.001606> [hit #19]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8572]  core @0.000285> request: GET /images/event/small-logo/2.png from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8572]  core @0.001696> [hit #20]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8572]  core @0.000260> request: GET /favicon.ico from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8572]  core @0.001704> [hit #21]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8572]  core @0.000269> request: GET /nl/ from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8572]  core @0.001179> [hit #22]Trying to match 'GET /nl/' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8572]  core @0.001441> [hit #22]Trying to match 'GET /nl/' against /^\/test\/$/ (generated from '/test/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8572]  core @0.001679> [hit #22]Trying to match 'GET /nl/' against /^\/([^\/]+)\/$/ (generated from '/:lang/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8572]  core @0.001985> [hit #22]  --> got 1 in /usr/local/share/perl5/Dancer/Route.pm l. 102
+[8572]  core @0.002203> [hit #22]  --> named tokens are: lang in /usr/local/share/perl5/Dancer/Route.pm l. 130
+[8572]  core @0.004350> [hit #22]entering before_template_render hook in /usr/local/share/perl5/Dancer/Hook.pm l. 58
+[8572]  core @0.015855> [hit #22]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8572]  core @0.000238> request: GET /css/style.css from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8572]  core @0.001618> [hit #23]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8572]  core @0.000261> request: GET /images/event/small-logo/1.png from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8572]  core @0.001696> [hit #24]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8572]  core @0.000260> request: GET /images/event/small-logo/2.png from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8572]  core @0.001754> [hit #25]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8572]  core @0.000196> request: GET /favicon.ico from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8572]  core @0.001080> [hit #26]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8572]  core @0.000260> request: GET /nl/ from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8572]  core @0.001264> [hit #27]Trying to match 'GET /nl/' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8572]  core @0.001558> [hit #27]Trying to match 'GET /nl/' against /^\/test\/$/ (generated from '/test/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8572]  core @0.001917> [hit #27]Trying to match 'GET /nl/' against /^\/([^\/]+)\/$/ (generated from '/:lang/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8572]  core @0.002193> [hit #27]  --> got 1 in /usr/local/share/perl5/Dancer/Route.pm l. 102
+[8572]  core @0.002435> [hit #27]  --> named tokens are: lang in /usr/local/share/perl5/Dancer/Route.pm l. 130
+[8572]  core @0.004808> [hit #27]entering before_template_render hook in /usr/local/share/perl5/Dancer/Hook.pm l. 58
+[8572]  core @0.016503> [hit #27]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8572]  core @0.000233> request: GET /css/style.css from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8572]  core @0.001569> [hit #28]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8572]  core @0.000342> request: GET /images/event/small-logo/2.png from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8572]  core @0.001645> [hit #29]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8572]  core @0.000234> request: GET /images/event/small-logo/1.png from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8572]  core @0.001510> [hit #30]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8572]  core @0.000250> request: GET /favicon.ico from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8572]  core @0.001671> [hit #31]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8577]  core @0.000016> loading Dancer::Handler::PSGI handler in /usr/local/share/perl5/Dancer/Handler.pm l. 45
+[8577]  core @0.007410> loading handler 'Dancer::Handler::PSGI' in /usr/local/share/perl5/Dancer.pm l. 474
+[8577]  core @0.000181> request: GET /nl/ from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8577]  core @0.001051> [hit #1]Trying to match 'GET /nl/' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8577]  core @0.001314> [hit #1]Trying to match 'GET /nl/' against /^\/test\/$/ (generated from '/test/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8577]  core @0.001555> [hit #1]Trying to match 'GET /nl/' against /^\/([^\/]+)\/$/ (generated from '/:lang/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8577]  core @0.001785> [hit #1]  --> got 1 in /usr/local/share/perl5/Dancer/Route.pm l. 102
+[8577]  core @0.002091> [hit #1]  --> named tokens are: lang in /usr/local/share/perl5/Dancer/Route.pm l. 130
+[8577] debug @0.002696> [hit #1]Adding mysql_enable_utf8 to DBI connection params to enable UTF-8 support in /usr/local/share/perl5/Dancer/Plugin/Database.pm l. 180
+[8577]  core @0.028258> [hit #1]entering before_template_render hook in /usr/local/share/perl5/Dancer/Hook.pm l. 58
+[8577] error @0.102709> [hit #1]request to GET /nl/ crashed: core - template - var.undef error - undefined variable: bullshit at /usr/local/share/perl5/Dancer/Template/Abstract.pm line 130. in /usr/local/share/perl5/Dancer/Handler.pm l. 98
+[8577]  core @0.114153> [hit #1]response: 500 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8577]  core @0.000357> request: GET /css/error.css from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8577]  core @0.006861> [hit #2]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8577]  core @0.000336> request: GET /favicon.ico from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8577]  core @0.001683> [hit #3]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8577]  core @0.000262> request: GET /nl/ from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8577]  core @0.001250> [hit #4]Trying to match 'GET /nl/' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8577]  core @0.001718> [hit #4]Trying to match 'GET /nl/' against /^\/test\/$/ (generated from '/test/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8577]  core @0.001978> [hit #4]Trying to match 'GET /nl/' against /^\/([^\/]+)\/$/ (generated from '/:lang/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8577]  core @0.002208> [hit #4]  --> got 1 in /usr/local/share/perl5/Dancer/Route.pm l. 102
+[8577]  core @0.002421> [hit #4]  --> named tokens are: lang in /usr/local/share/perl5/Dancer/Route.pm l. 130
+[8577]  core @0.004691> [hit #4]entering before_template_render hook in /usr/local/share/perl5/Dancer/Hook.pm l. 58
+[8577]  core @0.021449> [hit #4]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8577]  core @0.000376> request: GET /css/style.css from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8577]  core @0.001916> [hit #5]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8577]  core @0.000240> request: GET /images/event/small-logo/1.png from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8577]  core @0.001683> [hit #6]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8577]  core @0.000240> request: GET /images/event/small-logo/2.png from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8577]  core @0.001855> [hit #7]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8577]  core @0.000238> request: GET /favicon.ico from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8577]  core @0.001859> [hit #8]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8596]  core @0.000015> loading Dancer::Handler::PSGI handler in /usr/local/share/perl5/Dancer/Handler.pm l. 45
+[8596]  core @0.007877> loading handler 'Dancer::Handler::PSGI' in /usr/local/share/perl5/Dancer.pm l. 474
+[8596]  core @0.000161> request: GET / from 220.181.108.100 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8596]  core @0.000698> [hit #1]Trying to match 'GET /' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8596]  core @0.001031> [hit #1]  --> got 1 in /usr/local/share/perl5/Dancer/Route.pm l. 102
+[8596]  core @0.002752> [hit #1]response: 302 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8632]  core @0.000017> loading Dancer::Handler::PSGI handler in /usr/local/share/perl5/Dancer/Handler.pm l. 45
+[8632]  core @0.008315> loading handler 'Dancer::Handler::PSGI' in /usr/local/share/perl5/Dancer.pm l. 474
+[8632]  core @0.000242> request: GET / from 180.76.5.189 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8632]  core @0.000785> [hit #1]Trying to match 'GET /' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8632]  core @0.001015> [hit #1]  --> got 1 in /usr/local/share/perl5/Dancer/Route.pm l. 102
+[8632]  core @0.003073> [hit #1]response: 302 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8632]  core @0.000324> request: GET /en/ from 180.76.5.172 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8632]  core @0.000889> [hit #2]Trying to match 'GET /en/' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8632]  core @0.001142> [hit #2]Trying to match 'GET /en/' against /^\/test\/$/ (generated from '/test/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8632]  core @0.001471> [hit #2]Trying to match 'GET /en/' against /^\/([^\/]+)\/$/ (generated from '/:lang/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8632]  core @0.001708> [hit #2]  --> got 1 in /usr/local/share/perl5/Dancer/Route.pm l. 102
+[8632]  core @0.001922> [hit #2]  --> named tokens are: lang in /usr/local/share/perl5/Dancer/Route.pm l. 130
+[8632] debug @0.002595> [hit #2]Adding mysql_enable_utf8 to DBI connection params to enable UTF-8 support in /usr/local/share/perl5/Dancer/Plugin/Database.pm l. 180
+[8632]  core @0.028531> [hit #2]entering before_template_render hook in /usr/local/share/perl5/Dancer/Hook.pm l. 58
+[8632]  core @0.098513> [hit #2]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8636]  core @0.000017> loading Dancer::Handler::PSGI handler in /usr/local/share/perl5/Dancer/Handler.pm l. 45
+[8636]  core @0.009374> loading handler 'Dancer::Handler::PSGI' in /usr/local/share/perl5/Dancer.pm l. 474
+[8636]  core @0.000292> request: GET /en/ from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8636]  core @0.001359> [hit #1]Trying to match 'GET /en/' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8636]  core @0.001619> [hit #1]Trying to match 'GET /en/' against /^\/test\/$/ (generated from '/test/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8636]  core @0.001970> [hit #1]Trying to match 'GET /en/' against /^\/([^\/]+)\/$/ (generated from '/:lang/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8636]  core @0.002267> [hit #1]  --> got 1 in /usr/local/share/perl5/Dancer/Route.pm l. 102
+[8636]  core @0.002484> [hit #1]  --> named tokens are: lang in /usr/local/share/perl5/Dancer/Route.pm l. 130
+[8636] debug @0.003287> [hit #1]Adding mysql_enable_utf8 to DBI connection params to enable UTF-8 support in /usr/local/share/perl5/Dancer/Plugin/Database.pm l. 180
+[8636]  core @0.031100> [hit #1]entering before_template_render hook in /usr/local/share/perl5/Dancer/Hook.pm l. 58
+[8636]  core @0.049582> [hit #1]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8636]  core @0.000440> request: GET /css/style.css from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8636]  core @0.006720> [hit #2]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8636]  core @0.000291> request: GET /images/event/small-logo/1.png from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8636]  core @0.001973> [hit #3]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8636]  core @0.000344> request: GET /images/event/small-logo/2.png from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8636]  core @0.001782> [hit #4]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8636]  core @0.000248> request: GET /nl/ from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8636]  core @0.001115> [hit #5]Trying to match 'GET /nl/' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8636]  core @0.001374> [hit #5]Trying to match 'GET /nl/' against /^\/test\/$/ (generated from '/test/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8636]  core @0.001610> [hit #5]Trying to match 'GET /nl/' against /^\/([^\/]+)\/$/ (generated from '/:lang/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8636]  core @0.001916> [hit #5]  --> got 1 in /usr/local/share/perl5/Dancer/Route.pm l. 102
+[8636]  core @0.002131> [hit #5]  --> named tokens are: lang in /usr/local/share/perl5/Dancer/Route.pm l. 130
+[8636]  core @0.004307> [hit #5]entering before_template_render hook in /usr/local/share/perl5/Dancer/Hook.pm l. 58
+[8636]  core @0.015125> [hit #5]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8636]  core @0.000264> request: GET /css/style.css from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8636]  core @0.001923> [hit #6]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8636]  core @0.000264> request: GET /images/event/small-logo/1.png from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8636]  core @0.001727> [hit #7]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8636]  core @0.000341> request: GET /images/event/small-logo/2.png from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8636]  core @0.001701> [hit #8]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8636]  core @0.000238> request: GET /en/ from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8636]  core @0.001153> [hit #9]Trying to match 'GET /en/' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8636]  core @0.001510> [hit #9]Trying to match 'GET /en/' against /^\/test\/$/ (generated from '/test/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8636]  core @0.001786> [hit #9]Trying to match 'GET /en/' against /^\/([^\/]+)\/$/ (generated from '/:lang/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8636]  core @0.002022> [hit #9]  --> got 1 in /usr/local/share/perl5/Dancer/Route.pm l. 102
+[8636]  core @0.002238> [hit #9]  --> named tokens are: lang in /usr/local/share/perl5/Dancer/Route.pm l. 130
+[8636]  core @0.004463> [hit #9]entering before_template_render hook in /usr/local/share/perl5/Dancer/Hook.pm l. 58
+[8636]  core @0.014967> [hit #9]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8636]  core @0.000257> request: GET /css/style.css from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8636]  core @0.001716> [hit #10]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8636]  core @0.000241> request: GET /images/event/small-logo/1.png from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8636]  core @0.001584> [hit #11]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8636]  core @0.000486> request: GET /images/event/small-logo/2.png from 83.160.108.26 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8636]  core @0.002533> [hit #12]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8723]  core @0.000017> loading Dancer::Handler::PSGI handler in /usr/local/share/perl5/Dancer/Handler.pm l. 45
+[8723]  core @0.007712> loading handler 'Dancer::Handler::PSGI' in /usr/local/share/perl5/Dancer.pm l. 474
+[8723]  core @0.000284> request: GET / from 180.76.5.89 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8723]  core @0.000866> [hit #1]Trying to match 'GET /' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8723]  core @0.001174> [hit #1]  --> got 1 in /usr/local/share/perl5/Dancer/Route.pm l. 102
+[8723]  core @0.002986> [hit #1]response: 302 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8723]  core @0.000241> request: GET /en/ from 180.76.6.20 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8723]  core @0.000890> [hit #2]Trying to match 'GET /en/' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8723]  core @0.001148> [hit #2]Trying to match 'GET /en/' against /^\/test\/$/ (generated from '/test/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8723]  core @0.001401> [hit #2]Trying to match 'GET /en/' against /^\/([^\/]+)\/$/ (generated from '/:lang/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8723]  core @0.001638> [hit #2]  --> got 1 in /usr/local/share/perl5/Dancer/Route.pm l. 102
+[8723]  core @0.001934> [hit #2]  --> named tokens are: lang in /usr/local/share/perl5/Dancer/Route.pm l. 130
+[8723] debug @0.002520> [hit #2]Adding mysql_enable_utf8 to DBI connection params to enable UTF-8 support in /usr/local/share/perl5/Dancer/Plugin/Database.pm l. 180
+[8723]  core @0.027080> [hit #2]entering before_template_render hook in /usr/local/share/perl5/Dancer/Hook.pm l. 58
+[8723]  core @0.041363> [hit #2]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8753]  core @0.000017> loading Dancer::Handler::PSGI handler in /usr/local/share/perl5/Dancer/Handler.pm l. 45
+[8753]  core @0.007823> loading handler 'Dancer::Handler::PSGI' in /usr/local/share/perl5/Dancer.pm l. 474
+[8753]  core @0.000165> request: GET /images/event/small-logo/2.png from 66.249.72.225 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8753]  core @0.006389> [hit #1]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8760]  core @0.000016> loading Dancer::Handler::PSGI handler in /usr/local/share/perl5/Dancer/Handler.pm l. 45
+[8760]  core @0.007500> loading handler 'Dancer::Handler::PSGI' in /usr/local/share/perl5/Dancer.pm l. 474
+[8760]  core @0.000160> request: GET / from 123.125.71.18 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8760]  core @0.000754> [hit #1]Trying to match 'GET /' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8760]  core @0.000996> [hit #1]  --> got 1 in /usr/local/share/perl5/Dancer/Route.pm l. 102
+[8760]  core @0.002852> [hit #1]response: 302 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8760]  core @0.000300> request: GET / from 220.181.108.96 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8760]  core @0.000996> [hit #2]Trying to match 'GET /' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8760]  core @0.001245> [hit #2]  --> got 1 in /usr/local/share/perl5/Dancer/Route.pm l. 102
+[8760]  core @0.002904> [hit #2]response: 302 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8787]  core @0.000015> loading Dancer::Handler::PSGI handler in /usr/local/share/perl5/Dancer/Handler.pm l. 45
+[8787]  core @0.007546> loading handler 'Dancer::Handler::PSGI' in /usr/local/share/perl5/Dancer.pm l. 474
+[8787]  core @0.000145> request: GET /robots.txt from 180.76.5.167 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8787]  core @0.000766> [hit #1]Trying to match 'GET /robots.txt' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8787]  core @0.001021> [hit #1]Trying to match 'GET /robots.txt' against /^\/test\/$/ (generated from '/test/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8787]  core @0.001337> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/$/ (generated from '/:lang/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8787]  core @0.001590> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/event\/([^\/]+)\/$/ (generated from '/:lang/event/:event/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8787]  core @0.001854> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/feature\/([^\/]+)\/([^\/]+)\/$/ (generated from '/:lang/feature/:event/:feature/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8787]  core @0.002108> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/user\/([^\/]+)\/$/ (generated from '/:lang/user/:user/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8787]  core @0.002447> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/post\/([^\/]+)\/([^\/]+)\/$/ (generated from '/:lang/post/:user/:sho_id/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8787]  core @0.002723> [hit #1]Trying to match 'GET /robots.txt' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8787]  core @0.002958> [hit #1]Trying to match 'GET /robots.txt' against /^\/test\/$/ (generated from '/test/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8787]  core @0.003191> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/$/ (generated from '/:lang/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8787]  core @0.003512> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/event\/([^\/]+)\/$/ (generated from '/:lang/event/:event/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8787]  core @0.003759> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/feature\/([^\/]+)\/([^\/]+)\/$/ (generated from '/:lang/feature/:event/:feature/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8787]  core @0.004009> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/user\/([^\/]+)\/$/ (generated from '/:lang/user/:user/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8787]  core @0.004323> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/post\/([^\/]+)\/([^\/]+)\/$/ (generated from '/:lang/post/:user/:sho_id/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8787]  core @0.010200> [hit #1]response: 404 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8787]  core @0.000273> request: GET /robots.txt from 180.76.5.160 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8787]  core @0.003040> [hit #2]Trying to match 'GET /robots.txt' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8787]  core @0.003346> [hit #2]Trying to match 'GET /robots.txt' against /^\/test\/$/ (generated from '/test/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8787]  core @0.003620> [hit #2]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/$/ (generated from '/:lang/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8787]  core @0.003976> [hit #2]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/event\/([^\/]+)\/$/ (generated from '/:lang/event/:event/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8787]  core @0.004278> [hit #2]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/feature\/([^\/]+)\/([^\/]+)\/$/ (generated from '/:lang/feature/:event/:feature/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8787]  core @0.004566> [hit #2]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/user\/([^\/]+)\/$/ (generated from '/:lang/user/:user/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8787]  core @0.008928> [hit #2]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/post\/([^\/]+)\/([^\/]+)\/$/ (generated from '/:lang/post/:user/:sho_id/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8787]  core @0.009290> [hit #2]Trying to match 'GET /robots.txt' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8787]  core @0.009535> [hit #2]Trying to match 'GET /robots.txt' against /^\/test\/$/ (generated from '/test/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8787]  core @0.009771> [hit #2]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/$/ (generated from '/:lang/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8787]  core @0.010102> [hit #2]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/event\/([^\/]+)\/$/ (generated from '/:lang/event/:event/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8787]  core @0.010356> [hit #2]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/feature\/([^\/]+)\/([^\/]+)\/$/ (generated from '/:lang/feature/:event/:feature/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8787]  core @0.010608> [hit #2]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/user\/([^\/]+)\/$/ (generated from '/:lang/user/:user/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8787]  core @0.010859> [hit #2]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/post\/([^\/]+)\/([^\/]+)\/$/ (generated from '/:lang/post/:user/:sho_id/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8787]  core @0.015909> [hit #2]response: 404 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8787]  core @0.000255> request: GET /robots.txt from 180.76.5.180 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8787]  core @0.000756> [hit #3]Trying to match 'GET /robots.txt' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8787]  core @0.001013> [hit #3]Trying to match 'GET /robots.txt' against /^\/test\/$/ (generated from '/test/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8787]  core @0.005489> [hit #3]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/$/ (generated from '/:lang/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8787]  core @0.005747> [hit #3]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/event\/([^\/]+)\/$/ (generated from '/:lang/event/:event/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8787]  core @0.005998> [hit #3]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/feature\/([^\/]+)\/([^\/]+)\/$/ (generated from '/:lang/feature/:event/:feature/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8787]  core @0.010138> [hit #3]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/user\/([^\/]+)\/$/ (generated from '/:lang/user/:user/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8787]  core @0.010408> [hit #3]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/post\/([^\/]+)\/([^\/]+)\/$/ (generated from '/:lang/post/:user/:sho_id/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8787]  core @0.010684> [hit #3]Trying to match 'GET /robots.txt' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8787]  core @0.010926> [hit #3]Trying to match 'GET /robots.txt' against /^\/test\/$/ (generated from '/test/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8787]  core @0.016297> [hit #3]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/$/ (generated from '/:lang/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8787]  core @0.016552> [hit #3]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/event\/([^\/]+)\/$/ (generated from '/:lang/event/:event/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8787]  core @0.016802> [hit #3]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/feature\/([^\/]+)\/([^\/]+)\/$/ (generated from '/:lang/feature/:event/:feature/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8787]  core @0.017134> [hit #3]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/user\/([^\/]+)\/$/ (generated from '/:lang/user/:user/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8787]  core @0.017394> [hit #3]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/post\/([^\/]+)\/([^\/]+)\/$/ (generated from '/:lang/post/:user/:sho_id/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8787]  core @0.024463> [hit #3]response: 404 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8789]  core @0.000014> loading Dancer::Handler::PSGI handler in /usr/local/share/perl5/Dancer/Handler.pm l. 45
+[8791]  core @0.000012> loading Dancer::Handler::PSGI handler in /usr/local/share/perl5/Dancer/Handler.pm l. 45
+[8790]  core @0.000011> loading Dancer::Handler::PSGI handler in /usr/local/share/perl5/Dancer/Handler.pm l. 45
+[8789]  core @0.016976> loading handler 'Dancer::Handler::PSGI' in /usr/local/share/perl5/Dancer.pm l. 474
+[8791]  core @0.015926> loading handler 'Dancer::Handler::PSGI' in /usr/local/share/perl5/Dancer.pm l. 474
+[8790]  core @0.015975> loading handler 'Dancer::Handler::PSGI' in /usr/local/share/perl5/Dancer.pm l. 474
+[8789]  core @0.000164> request: GET /robots.txt from 180.76.5.195 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8789]  core @0.000557> [hit #1]Trying to match 'GET /robots.txt' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8789]  core @0.004111> [hit #1]Trying to match 'GET /robots.txt' against /^\/test\/$/ (generated from '/test/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8789]  core @0.004326> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/$/ (generated from '/:lang/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8789]  core @0.004472> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/event\/([^\/]+)\/$/ (generated from '/:lang/event/:event/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8789]  core @0.004629> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/feature\/([^\/]+)\/([^\/]+)\/$/ (generated from '/:lang/feature/:event/:feature/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8789]  core @0.006928> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/user\/([^\/]+)\/$/ (generated from '/:lang/user/:user/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8789]  core @0.007088> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/post\/([^\/]+)\/([^\/]+)\/$/ (generated from '/:lang/post/:user/:sho_id/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8789]  core @0.007259> [hit #1]Trying to match 'GET /robots.txt' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8789]  core @0.007399> [hit #1]Trying to match 'GET /robots.txt' against /^\/test\/$/ (generated from '/test/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8789]  core @0.007538> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/$/ (generated from '/:lang/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8789]  core @0.007730> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/event\/([^\/]+)\/$/ (generated from '/:lang/event/:event/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8789]  core @0.007896> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/feature\/([^\/]+)\/([^\/]+)\/$/ (generated from '/:lang/feature/:event/:feature/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8789]  core @0.008048> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/user\/([^\/]+)\/$/ (generated from '/:lang/user/:user/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8789]  core @0.008193> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/post\/([^\/]+)\/([^\/]+)\/$/ (generated from '/:lang/post/:user/:sho_id/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8791]  core @0.000172> request: GET /robots.txt from 180.76.5.61 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8791]  core @0.002632> [hit #1]Trying to match 'GET /robots.txt' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8791]  core @0.002796> [hit #1]Trying to match 'GET /robots.txt' against /^\/test\/$/ (generated from '/test/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8791]  core @0.002940> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/$/ (generated from '/:lang/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8791]  core @0.003084> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/event\/([^\/]+)\/$/ (generated from '/:lang/event/:event/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8791]  core @0.003321> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/feature\/([^\/]+)\/([^\/]+)\/$/ (generated from '/:lang/feature/:event/:feature/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8791]  core @0.003476> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/user\/([^\/]+)\/$/ (generated from '/:lang/user/:user/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8791]  core @0.003625> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/post\/([^\/]+)\/([^\/]+)\/$/ (generated from '/:lang/post/:user/:sho_id/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8791]  core @0.003784> [hit #1]Trying to match 'GET /robots.txt' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8791]  core @0.003923> [hit #1]Trying to match 'GET /robots.txt' against /^\/test\/$/ (generated from '/test/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8791]  core @0.004060> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/$/ (generated from '/:lang/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8789]  core @0.019463> [hit #1]response: 404 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8791]  core @0.004206> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/event\/([^\/]+)\/$/ (generated from '/:lang/event/:event/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8791]  core @0.008451> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/feature\/([^\/]+)\/([^\/]+)\/$/ (generated from '/:lang/feature/:event/:feature/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8791]  core @0.008604> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/user\/([^\/]+)\/$/ (generated from '/:lang/user/:user/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8791]  core @0.008750> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/post\/([^\/]+)\/([^\/]+)\/$/ (generated from '/:lang/post/:user/:sho_id/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8790]  core @0.000168> request: GET /robots.txt from 180.76.5.92 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8790]  core @0.003691> [hit #1]Trying to match 'GET /robots.txt' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8790]  core @0.003851> [hit #1]Trying to match 'GET /robots.txt' against /^\/test\/$/ (generated from '/test/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8790]  core @0.003995> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/$/ (generated from '/:lang/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8790]  core @0.004138> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/event\/([^\/]+)\/$/ (generated from '/:lang/event/:event/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8790]  core @0.004356> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/feature\/([^\/]+)\/([^\/]+)\/$/ (generated from '/:lang/feature/:event/:feature/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8790]  core @0.004510> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/user\/([^\/]+)\/$/ (generated from '/:lang/user/:user/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8790]  core @0.004660> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/post\/([^\/]+)\/([^\/]+)\/$/ (generated from '/:lang/post/:user/:sho_id/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8790]  core @0.004818> [hit #1]Trying to match 'GET /robots.txt' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8790]  core @0.004958> [hit #1]Trying to match 'GET /robots.txt' against /^\/test\/$/ (generated from '/test/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8790]  core @0.005096> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/$/ (generated from '/:lang/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8790]  core @0.007925> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/event\/([^\/]+)\/$/ (generated from '/:lang/event/:event/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8790]  core @0.008140> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/feature\/([^\/]+)\/([^\/]+)\/$/ (generated from '/:lang/feature/:event/:feature/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8790]  core @0.008341> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/user\/([^\/]+)\/$/ (generated from '/:lang/user/:user/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8790]  core @0.008491> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/post\/([^\/]+)\/([^\/]+)\/$/ (generated from '/:lang/post/:user/:sho_id/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8791]  core @0.017038> [hit #1]response: 404 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8790]  core @0.015324> [hit #1]response: 404 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8923]  core @0.000017> loading Dancer::Handler::PSGI handler in /usr/local/share/perl5/Dancer/Handler.pm l. 45
+[8923]  core @0.008033> loading handler 'Dancer::Handler::PSGI' in /usr/local/share/perl5/Dancer.pm l. 474
+[8923]  core @0.000184> request: GET /robots.txt from 66.249.72.19 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8923]  core @0.000884> [hit #1]Trying to match 'GET /robots.txt' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8923]  core @0.001155> [hit #1]Trying to match 'GET /robots.txt' against /^\/test\/$/ (generated from '/test/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8923]  core @0.001505> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/$/ (generated from '/:lang/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8923]  core @0.001789> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/event\/([^\/]+)\/$/ (generated from '/:lang/event/:event/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8923]  core @0.002058> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/feature\/([^\/]+)\/([^\/]+)\/$/ (generated from '/:lang/feature/:event/:feature/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8923]  core @0.002335> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/user\/([^\/]+)\/$/ (generated from '/:lang/user/:user/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8923]  core @0.002683> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/post\/([^\/]+)\/([^\/]+)\/$/ (generated from '/:lang/post/:user/:sho_id/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8923]  core @0.002956> [hit #1]Trying to match 'GET /robots.txt' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8923]  core @0.003221> [hit #1]Trying to match 'GET /robots.txt' against /^\/test\/$/ (generated from '/test/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8923]  core @0.003652> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/$/ (generated from '/:lang/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8923]  core @0.003921> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/event\/([^\/]+)\/$/ (generated from '/:lang/event/:event/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8923]  core @0.004192> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/feature\/([^\/]+)\/([^\/]+)\/$/ (generated from '/:lang/feature/:event/:feature/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8923]  core @0.004541> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/user\/([^\/]+)\/$/ (generated from '/:lang/user/:user/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8923]  core @0.004797> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/post\/([^\/]+)\/([^\/]+)\/$/ (generated from '/:lang/post/:user/:sho_id/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8923]  core @0.010853> [hit #1]response: 404 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8923]  core @0.000397> request: GET / from 66.249.72.19 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8923]  core @0.001028> [hit #2]Trying to match 'GET /' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8923]  core @0.001401> [hit #2]  --> got 1 in /usr/local/share/perl5/Dancer/Route.pm l. 102
+[8923]  core @0.003383> [hit #2]response: 302 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8923]  core @0.000333> request: GET /en/ from 66.249.72.19 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8923]  core @0.000888> [hit #3]Trying to match 'GET /en/' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8923]  core @0.001132> [hit #3]Trying to match 'GET /en/' against /^\/test\/$/ (generated from '/test/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8923]  core @0.001579> [hit #3]Trying to match 'GET /en/' against /^\/([^\/]+)\/$/ (generated from '/:lang/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8923]  core @0.001828> [hit #3]  --> got 1 in /usr/local/share/perl5/Dancer/Route.pm l. 102
+[8923]  core @0.002045> [hit #3]  --> named tokens are: lang in /usr/local/share/perl5/Dancer/Route.pm l. 130
+[8923] debug @0.002741> [hit #3]Adding mysql_enable_utf8 to DBI connection params to enable UTF-8 support in /usr/local/share/perl5/Dancer/Plugin/Database.pm l. 180
+[8923]  core @0.027569> [hit #3]entering before_template_render hook in /usr/local/share/perl5/Dancer/Hook.pm l. 58
+[8923]  core @0.042682> [hit #3]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8964]  core @0.000017> loading Dancer::Handler::PSGI handler in /usr/local/share/perl5/Dancer/Handler.pm l. 45
+[8964]  core @0.007690> loading handler 'Dancer::Handler::PSGI' in /usr/local/share/perl5/Dancer.pm l. 474
+[8964]  core @0.000296> request: GET / from 123.125.71.59 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8964]  core @0.000884> [hit #1]Trying to match 'GET /' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8964]  core @0.001216> [hit #1]  --> got 1 in /usr/local/share/perl5/Dancer/Route.pm l. 102
+[8964]  core @0.003119> [hit #1]response: 302 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8964]  core @0.000334> request: GET / from 220.181.108.78 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8964]  core @0.001190> [hit #2]Trying to match 'GET /' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8964]  core @0.001503> [hit #2]  --> got 1 in /usr/local/share/perl5/Dancer/Route.pm l. 102
+[8964]  core @0.003581> [hit #2]response: 302 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8975]  core @0.000015> loading Dancer::Handler::PSGI handler in /usr/local/share/perl5/Dancer/Handler.pm l. 45
+[8975]  core @0.007535> loading handler 'Dancer::Handler::PSGI' in /usr/local/share/perl5/Dancer.pm l. 474
+[8975]  core @0.000181> request: GET /robots.txt from 66.249.72.236 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8975]  core @0.000825> [hit #1]Trying to match 'GET /robots.txt' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8975]  core @0.001082> [hit #1]Trying to match 'GET /robots.txt' against /^\/test\/$/ (generated from '/test/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8975]  core @0.001325> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/$/ (generated from '/:lang/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8975]  core @0.001645> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/event\/([^\/]+)\/$/ (generated from '/:lang/event/:event/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8975]  core @0.001913> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/feature\/([^\/]+)\/([^\/]+)\/$/ (generated from '/:lang/feature/:event/:feature/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8975]  core @0.002166> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/user\/([^\/]+)\/$/ (generated from '/:lang/user/:user/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8975]  core @0.002438> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/post\/([^\/]+)\/([^\/]+)\/$/ (generated from '/:lang/post/:user/:sho_id/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8975]  core @0.002827> [hit #1]Trying to match 'GET /robots.txt' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8975]  core @0.003064> [hit #1]Trying to match 'GET /robots.txt' against /^\/test\/$/ (generated from '/test/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8975]  core @0.003296> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/$/ (generated from '/:lang/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8975]  core @0.003616> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/event\/([^\/]+)\/$/ (generated from '/:lang/event/:event/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8975]  core @0.003866> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/feature\/([^\/]+)\/([^\/]+)\/$/ (generated from '/:lang/feature/:event/:feature/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8975]  core @0.004118> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/user\/([^\/]+)\/$/ (generated from '/:lang/user/:user/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8975]  core @0.004361> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/post\/([^\/]+)\/([^\/]+)\/$/ (generated from '/:lang/post/:user/:sho_id/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[8975]  core @0.010093> [hit #1]response: 404 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[8975]  core @0.000288> request: GET /images/event/small-logo/2.png from 66.249.72.236 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[8975]  core @0.001151> [hit #2]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[9116]  core @0.000011> loading Dancer::Handler::PSGI handler in /usr/local/share/perl5/Dancer/Handler.pm l. 45
+[9116]  core @0.004412> loading handler 'Dancer::Handler::PSGI' in /usr/local/share/perl5/Dancer.pm l. 474
+[9116]  core @0.000110> request: GET /robots.txt from 66.249.72.36 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[9116]  core @0.000483> [hit #1]Trying to match 'GET /robots.txt' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[9116]  core @0.000689> [hit #1]Trying to match 'GET /robots.txt' against /^\/test\/$/ (generated from '/test/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[9116]  core @0.000849> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/$/ (generated from '/:lang/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[9116]  core @0.001007> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/event\/([^\/]+)\/$/ (generated from '/:lang/event/:event/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[9116]  core @0.001181> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/feature\/([^\/]+)\/([^\/]+)\/$/ (generated from '/:lang/feature/:event/:feature/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[9116]  core @0.001335> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/user\/([^\/]+)\/$/ (generated from '/:lang/user/:user/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[9116]  core @0.001486> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/post\/([^\/]+)\/([^\/]+)\/$/ (generated from '/:lang/post/:user/:sho_id/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[9116]  core @0.001694> [hit #1]Trying to match 'GET /robots.txt' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[9116]  core @0.001850> [hit #1]Trying to match 'GET /robots.txt' against /^\/test\/$/ (generated from '/test/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[9116]  core @0.002013> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/$/ (generated from '/:lang/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[9116]  core @0.002179> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/event\/([^\/]+)\/$/ (generated from '/:lang/event/:event/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[9116]  core @0.002328> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/feature\/([^\/]+)\/([^\/]+)\/$/ (generated from '/:lang/feature/:event/:feature/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[9116]  core @0.002496> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/user\/([^\/]+)\/$/ (generated from '/:lang/user/:user/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[9116]  core @0.002690> [hit #1]Trying to match 'GET /robots.txt' against /^\/([^\/]+)\/post\/([^\/]+)\/([^\/]+)\/$/ (generated from '/:lang/post/:user/:sho_id/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[9116]  core @0.006366> [hit #1]response: 404 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[9116]  core @0.000261> request: GET / from 66.249.72.36 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[9116]  core @0.000859> [hit #2]Trying to match 'GET /' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[9116]  core @0.001232> [hit #2]  --> got 1 in /usr/local/share/perl5/Dancer/Route.pm l. 102
+[9116]  core @0.003234> [hit #2]response: 302 in /usr/local/share/perl5/Dancer/Handler.pm l. 179
+[9116]  core @0.000322> request: GET /en/ from 66.249.72.36 in /usr/local/share/perl5/Dancer/Handler.pm l. 56
+[9116]  core @0.000904> [hit #3]Trying to match 'GET /en/' against /^\/$/ (generated from '/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[9116]  core @0.001225> [hit #3]Trying to match 'GET /en/' against /^\/test\/$/ (generated from '/test/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[9116]  core @0.001478> [hit #3]Trying to match 'GET /en/' against /^\/([^\/]+)\/$/ (generated from '/:lang/') in /usr/local/share/perl5/Dancer/Route.pm l. 84
+[9116]  core @0.001708> [hit #3]  --> got 1 in /usr/local/share/perl5/Dancer/Route.pm l. 102
+[9116]  core @0.001977> [hit #3]  --> named tokens are: lang in /usr/local/share/perl5/Dancer/Route.pm l. 130
+[9116] debug @0.002650> [hit #3]Adding mysql_enable_utf8 to DBI connection params to enable UTF-8 support in /usr/local/share/perl5/Dancer/Plugin/Database.pm l. 180
+[9116]  core @0.029739> [hit #3]entering before_template_render hook in /usr/local/share/perl5/Dancer/Hook.pm l. 58
+[9116]  core @0.046438> [hit #3]response: 200 in /usr/local/share/perl5/Dancer/Handler.pm l. 179

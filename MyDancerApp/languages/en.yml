@@ -1,0 +1,13 @@
+about: "About"
+features: "Features"
+languages: "Languages"
+locations: "Locations"
+our_supported_events: "Our supported events"
+posts: "Posts"
+
+################### Lists ###################
+languages_list:
+    en:
+        name: English
+    nl:
+        name: Nederlands

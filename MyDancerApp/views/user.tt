@@ -1,0 +1,23 @@
+<div style="font-size:20px; border:5px solid gray">
+<img height="100" width="100" src="/images/user/small/[% user.use_id %].png">[% user.use_name %]
+</div>
+
+[%  FOREACH post IN posts %]
+[% UNLESS previous_eve_id == post.eve_id %]
+<h3>[% post.evet_name %]</h3>
+[% END %]
+<table border="0">
+	<tr><td><img height="100" width="100" src="/images/feature/small/[% post.fea_id %].png"></td>
+	<td>
+	<div>
+		I saw <a href="[% post.fea_url %]">[% post.feat_name %]</a> and gave it a <b>[% post.pos_rating %]</b>!
+	</div>
+     <div>[% post.pos_message %]
+	</div>
+	<div style="font-size:80%; color: gray">Posted on <a href="[% post.pos_url %]">[% post.pos_datetime %]</a>
+	</div>
+	</td></tr></table>
+	<br />
+	[% previous_eve_id = post.eve_id %]
+[%  END %]
+

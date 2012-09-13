@@ -1,0 +1,13 @@
+about: "Over"
+features: "Shows"
+languages: "Talen"
+locations: "Locaties"
+our_supported_events: "De events tot nu toe"
+posts: "Berichten"
+
+################### Lists ###################
+languages_list:
+    en:
+        name: English
+    nl:
+        name: Nederlands

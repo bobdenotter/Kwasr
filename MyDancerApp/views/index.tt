@@ -1,0 +1,7 @@
+[% text.our_supported_events %]:
+
+[%  FOREACH event IN events %]
+<h3 style="vertical-align:top"><img height="100" width="100" src="/images/event/small-logo/[% event.eve_id %].png"><a href="[% event.eve_url %]">[% event.evet_name %]</a></h3>
+
+[%  END %]
+

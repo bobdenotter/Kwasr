@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+<title>Kwasr api definition</title>
+<link rel="stylesheet" href="/css/documentation.css" />
+</head>
+
+<body>
+
+<h1>kwasr.net API definition</h1>
+
+Specification for version "v1".
+
+<h2>Remarks</h2>
+<ul>
+	<li><i>version</i> ⇒ example "v1"</li>
+	<li><i>lang</i> ⇒ Two character lowercase ISO language code. Example "nl"</li>
+	<li>Column naming: first three letters are the first three letters of the table name. If it is a language dependent column, the forth letter is a 't' (from translation).</li>
+</ul>
+
+<h2>Todo items</h2>
+<pre>
+#todo jas: implement adding a post
+#todo jas: add authentication
+#todo jas: only support https (costs +/- ¢200 per year. Do we want to spend that?)
+#todo jas: add functionality for creating an account
+#todo jas: create a method that returns a hash of the features and showings. That way, the app only has to get the hash to see if anything has changed
+</pre>
+
+<h2>Getting server config info</h2>
+<h3>IN url</h3>
+<pre>GET /<i>version</i>/config</pre>
+<h3>IN url params</h3>
+-
+<h3>IN data</h3>
+-
+<h3>OUT</h3>
+-
+
+<h2>Getting new user challenge</h2>
+<h3>IN url</h3>
+<pre>GET /<i>version</i>/new_user_challenge</pre>
+<h3>IN url params</h3>
+-
+<h3>IN data</h3>
+-
+<h3>OUT</h3>
+-
+
+<h2>Getting event list</h2>
+	<h3>IN url</h3>
+	<pre>GET /<i>version</i>/<i>lang</i>/events</pre>
+	<h3>IN url params</h3>
+	-
+	<h3>IN data</h3>
+	-
+<h3>OUT</h3>
+-
+
+<h2>Getting event with details</h2>
+This returns all the location details, all feature details and all showing details.
+	<h3>IN url</h3>
+	<pre>GET /<i>version</i>/<i>lang</i>/event/<i>event_id</i></pre>
+	<h3>IN url params</h3>
+	-
+	<h3>IN data</h3>
+	-
+<h3>OUT</h3>
+-
+
+<h2>Getting user with posts</h2>
+This returns all the user details and all post details. The posts are for all events, so the client will have to filter. In the future, we can add (optional) filters on date and/or event.
+	<h3>IN url</h3>
+	<pre>GET /<i>version</i>/<i>lang</i>/user/<i>user_id</i></pre>
+	<h3>IN url params</h3>
+	-
+	<h3>IN data</h3>
+	-
+<h3>OUT</h3>
+-
+
+<div id="footer">
+	<hr />
+Powered by Allard, Bob en Jasper
+</div>
+
+</body>
+</html>

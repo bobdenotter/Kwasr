@@ -1,0 +1,25 @@
+<div style="font-size:20px; border:5px solid gray ">
+<img height="100" width="100" src="/images/event/small-logo/[% event.eve_id %].png">[% event.evet_name %]
+</div>
+
+<h3>[% text.locations %]</h3>
+<ul>
+[%  FOREACH location IN locations %]
+<li>[% location.loct_name %]</li>
+[% END %]
+</ul>
+
+
+<h3>[% text.features %]</h3>
+<ul>
+[%  FOREACH feature IN features %]
+
+[% UNLESS prev_fea_id == feature.fea_id %]
+
+<h4><img height="100" width="100" src="/images/feature/small/[% feature.fea_id %].png"><a href="[% feature.fea_url %]">[% feature.feat_name %]</a></h4>
+[% END %]
+From [% feature.sho_start_datetime %] to [% feature.sho_end_datetime %]<br />
+[% prev_fea_id = feature.fea_id %]
+
+[% END %]
+</ul>

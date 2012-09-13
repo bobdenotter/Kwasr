@@ -1,0 +1,12 @@
+<div style="font-size:20px; border:5px solid gray">
+<img height="100" width="100" src="/images/feature/small/[% feature.fea_id %].png">[% feature.feat_name %]
+</div>
+
+
+Showings:
+<ul>
+[%  FOREACH showing IN showings %]
+<li>In [% showing.loct_name %] from [% showing.sho_start_datetime %] to [% showing.sho_end_datetime %]</li>
+
+[% END %]
+</ul>
