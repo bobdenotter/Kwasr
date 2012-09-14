@@ -12,6 +12,7 @@
 
 <h3>[% text.features %]</h3>
 <ul>
+[% prev_fea_id = -1 %]
 [%  FOREACH feature IN features %]
 
 [% UNLESS prev_fea_id == feature.fea_id %]
