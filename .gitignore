@@ -4,6 +4,7 @@ _build/
 cover_db/
 logs/
 inc/
+caches/
 Build
 Build.bat
 .DS_Store
