@@ -2,6 +2,7 @@
 <img height="100" width="100" src="/images/user/small/[% user.use_id %].png">[% user.use_name %]
 </div>
 
+[% previous_eve_id = -1 %]
 [%  FOREACH post IN posts %]
 [% UNLESS previous_eve_id == post.eve_id %]
 <h3>[% post.evet_name %]</h3>
