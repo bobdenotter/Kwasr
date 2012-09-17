@@ -10,7 +10,6 @@ use YAML;
 #todo jas: dev and production environment (different port or different subdomain?)
 #todo jas: move to DBIx::Class (do I want this or do I just want abstract base classes for tables?) or 
 #          build modules for each table and offer calls to get data, so there don't have to be queries in this file
-#todo jas: show averages and word clouds and that kind of stuff
 #todo jas: support urls without language code (for external links to the kwasr.net)
 #todo jas: should I build a table FeatureAtEvent and store the average scores there?
 

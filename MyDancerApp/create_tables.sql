@@ -160,22 +160,24 @@ INSERT INTO kwasr.User VALUES
 
 DROP TABLE IF EXISTS kwasr.Showing;
 CREATE TABLE kwasr.Showing (
-	sho_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-	loc_id INT NOT NULL,
-	fea_id INT NOT NULL,
+	sho_id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	loc_id INT UNSIGNED NOT NULL,
+	fea_id INT UNSIGNED NOT NULL,
 	sho_start_datetime TIMESTAMP NOT NULL,
-	sho_end_datetime TIMESTAMP NOT NULL
+	sho_end_datetime TIMESTAMP NOT NULL,
+	sho_nr_posts INT UNSIGNED NOT NULL DEFAULT 0,
+	sho_avg_post_rating DECIMAL(3,2) UNSIGNED NOT NULL DEFAULT 0
 )
 COMMENT "a single Showing by a band (or movie or ) in a location";
 
 INSERT INTO kwasr.Showing VALUES 
-	(null, 1, 3, "2012-09-14 17:00", "2012-09-14 19:00" ),
-	(null, 1, 1, "2012-09-14 20:00", "2012-09-14 22:00" ),
-	(null, 2, 2, "2012-09-15 17:30", "2012-09-15 20:00" ),
-	(null, 2, 1, "2012-09-14 20:30", "2012-09-14 22:30" ),
-	(null, 3, 4, "2012-06-20 20:30", "2012-06-20 22:30" ),
-	(null, 3, 5, "2012-06-21 20:30", "2012-06-21 22:30" ),
-	(null, 4, 6, "2012-06-22 20:30", "2012-06-22 22:30" );
+	(null, 1, 3, "2012-09-14 17:00", "2012-09-14 19:00", NULL, NULL ),
+	(null, 1, 1, "2012-09-14 20:00", "2012-09-14 22:00", NULL, NULL ),
+	(null, 2, 2, "2012-09-15 17:30", "2012-09-15 20:00", NULL, NULL ),
+	(null, 2, 1, "2012-09-14 20:30", "2012-09-14 22:30", NULL, NULL ),
+	(null, 3, 4, "2012-06-20 20:30", "2012-06-20 22:30", NULL, NULL ),
+	(null, 3, 5, "2012-06-21 20:30", "2012-06-21 22:30", NULL, NULL ),
+	(null, 4, 6, "2012-06-22 20:30", "2012-06-22 22:30", NULL, NULL );
 	
 
 DROP TABLE IF EXISTS Post;
@@ -207,5 +209,13 @@ CREATE TABLE Challenge (
 	created TIMESTAMP NOT NULL
 );
 
+UPDATE Showing s, 
+(
+	SELECT sho_id, COUNT(*) as post_count, AVG(pos_rating) as post_average FROM Post GROUP BY sho_id
+) as T
+SET 
+	s.sho_nr_posts = T.post_count, s.sho_avg_post_rating = T.post_average
+WHERE 
+	s.sho_id = T.sho_id;
 
 
