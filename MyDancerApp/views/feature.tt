@@ -1,5 +1,5 @@
 <div style="font-size:20px; border:5px solid gray">
-<img height="100" width="100" src="/images/feature/small/[% feature.fea_id %].png">[% feature.feat_name %]
+<img height="100" width="100" src="/images/feature/small/[% feature.fea_id %].png">[% feature.feat_name %] (avg [% feature.fea_avg_post_rating %] from [% feature.fea_nr_posts %] posts)
 </div>
 
 

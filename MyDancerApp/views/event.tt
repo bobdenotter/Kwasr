@@ -17,7 +17,7 @@
 
 [% UNLESS prev_fea_id == feature.fea_id %]
 
-<h4><img height="100" width="100" src="/images/feature/small/[% feature.fea_id %].png"><a href="[% feature.fea_url %]">[% feature.feat_name %]</a></h4>
+<h4><img height="100" width="100" src="/images/feature/small/[% feature.fea_id %].png"><a href="[% feature.fea_url %]">[% feature.feat_name %]</a> (avg [% feature.fea_avg_post_rating %] from [% feature.fea_nr_posts %] posts)</h4>
 [% END %]
 From [% feature.sho_start_datetime %] to [% feature.sho_end_datetime %]<br />
 [% prev_fea_id = feature.fea_id %]

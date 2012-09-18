@@ -123,6 +123,15 @@ get '/:lang/event/:event/' => sub {
 	$sth = database->prepare( "SELECT * FROM Feature p, FeatureTrans pt, Showing s WHERE p.fea_id=pt.fea_id AND pt.feat_languagecode=? AND s.fea_id=p.fea_id AND s.loc_id IN ($loc_ids) ORDER BY pt.feat_name ASC, s.sho_start_datetime ASC" );
 	$sth->execute(param('lang'));
 	my @features = (); while( my $row = $sth->fetchrow_hashref() ) { push @features, { %$row, evet_name_slug => $event->{evet_name_slug} } };
+	my %tf; # temp features
+	foreach my $f (@features) {
+		$tf{$f->{fea_id}}{count} += $f->{sho_nr_posts};
+		$tf{$f->{fea_id}}{avg} += $f->{sho_nr_posts} * $f->{sho_avg_post_rating};
+	} 
+	foreach my $f (@features) {
+		$f->{fea_nr_posts} = $tf{$f->{fea_id}}{count};
+		$f->{fea_avg_post_rating} = $tf{$f->{fea_id}}{count} ? $tf{$f->{fea_id}}{avg} / $tf{$f->{fea_id}}{count} : 0;
+	} 
 
 	template 'event' => { 
 	    event => $event,
@@ -154,7 +163,15 @@ get '/:lang/feature/:event/:feature/' => sub {
 	$sth->execute( param('lang'), $event->{eve_id}, $feature->{fea_id} );
 	my @showings = (); while( my $row = $sth->fetchrow_hashref() ) { push @showings, { %$row } };
 	send_error("No showings Found", 404) unless @showings;
-
+	
+	#calculate nr of posts and avg rating
+	my $nr_posts = 0;
+	my $avg_post_rating = 0;
+	$nr_posts += $_->{sho_nr_posts} foreach @showings; 
+	$avg_post_rating += ( $_->{sho_nr_posts} * $_->{sho_avg_post_rating} ) foreach @showings; 
+	$feature->{fea_avg_post_rating} = $nr_posts ? $avg_post_rating / $nr_posts : 0;
+	$feature->{fea_nr_posts} = $nr_posts;
+	
     template 'feature' => { 
 		event => $event,
 		feature => $feature,
