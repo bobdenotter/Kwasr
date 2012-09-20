@@ -1,0 +1,10 @@
+User-agent: psbot
+Disallow: /
+User-agent: TurnitinBot
+Disallow: /
+User-agent: NPBot-1/2.0
+Disallow: /
+User-agent: NPBot
+Disallow: /
+User-agent: *
+Disallow: /honing.html
