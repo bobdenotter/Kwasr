@@ -117,7 +117,7 @@ INSERT INTO kwasr.Feature VALUES
 	( 3, "The Hunger games", 1392170, NULL, "http://ia.media-imdb.com/images/M/MV5BMjA4NDg3NzYxMF5BMl5BanBnXkFtZTcwNTgyNzkyNw@@._V1._SY317_.jpg"),
 	( 4, "The Smashing Pumpkins", NULL, "The+Smashing+Pumpkins", "http://userserve-ak.last.fm/serve/500/216737/The+Smashing+Pumpkins+sdsd.jpg"),
 	( 5, "Fatboy Slim", NULL, "Fatboy+Slim", "http://userserve-ak.last.fm/serve/_/10575075/Fatboy+Slim+Fatboy_051103123114921_wideweb.jpg"),
-	( 6, "De Raggende Manne", NULL, "De+Raggende+Manne", "http://userserve-ak.last.fm/serve/_/174346/De+Raggende+Manne.jpg")
+	( 6, "De Raggende Manne", NULL, "De+Raggende+Manne", "http://userserve-ak.last.fm/serve/_/174346/De+Raggende+Manne.jpg");
 
 
 DROP TABLE IF EXISTS kwasr.FeatureTrans;
