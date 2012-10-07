@@ -9,27 +9,48 @@ use I18N::AcceptLanguage;
 use YAML;
 
 
-set serializer => 'JSON';
+#set serializer => 'JSON';
 
 
 our $VERSION = '0.1';
+
+use constant {
+    # Formats
+    JSON_FT  => "json",
+    XML_FT   => "xml",
+    YAML_FT  => "yaml",
+    TEXT_FT  => "text",
+    HTML_FT  => "html",
+ 
+    # Content Types
+    JSONP_CT => "text/javascript",
+    JSON_CT  => "application/json",
+    XML_CT   => 'text/xml',
+    YAML_CT  => 'application/yaml',
+    TEXT_CT  => "text/plain",
+};
+
+sub return_json {
+    my ($data, $callback) = @_;
+    my $ret = $callback ? "$callback(" : '';
+    $ret .= to_json($data);
+    $ret .= ");" if $callback;
+    content_type($callback ? JSONP_CT : JSON_CT);
+    return $ret;
+}
 
 get '/' => sub {
 	send_file '/index.html'
 };
 
 get '/:version/config' => sub {
-    return {
-		supported_languages => setting("supported_languages"),
-	};
+    return return_json( { supported_languages => setting("supported_languages") }, param("callback") || undef );
 };
 
 get '/:version/new_user_challenge' => sub {
-	my $challenge = Digest::SHA::sha1_hex(localtime . rand . "some weirdo string");
+	my $challenge = Digest::SHA::sha1_hex(localtime() . rand() . "some weirdo string");
 	database->do("INSERT INTO Challenge VALUES (?, null)", undef, $challenge);
-    return {
-		challenge => $challenge,
-	};
+    return return_json( { challenge => $challenge }, param("callback") || undef );
 };
 
 get '/:version/:lang/events' => sub {
@@ -38,10 +59,7 @@ get '/:version/:lang/events' => sub {
 	my $sth = database->prepare( 'SELECT * FROM Event e, EventTrans et WHERE e.eve_id=et.eve_id AND evet_languagecode=?' );
 	$sth->execute(param('lang'));
 	my @r = (); while( my $row = $sth->fetchrow_hashref() ) { push @r, { %$row } };
-	return { 
-	    events => \@r,
-
-	};
+	return return_json( { events => \@r }, param("callback") || undef );
 };
 
 get '/:version/:lang/event/:eve_id' => sub {
@@ -61,10 +79,8 @@ get '/:version/:lang/event/:eve_id' => sub {
 		while( my $row = $sth->fetchrow_hashref() ) { push @features, { %$row } };
 	}
 	
-	return { 
-		locations => \@locs,
-		features => \@features,
-	};
+	return return_json( { locations => \@locs,
+		features => \@features }, param("callback") || undef );
 };
 
 get '/:version/:lang/user/:use_id' => sub {
@@ -80,14 +96,12 @@ get '/:version/:lang/user/:use_id' => sub {
 	$sth->execute( $user->{use_id} );
 	my @posts = (); while( my $row = $sth->fetchrow_hashref() ) { push @posts, $row };
 	
-    return { 
-	    user => $user,
-		posts => \@posts,
-	};
+    return return_json( { user => $user,
+		posts => \@posts }, param("callback") || undef );
 };
 
 get '/:version/test' => sub {
-    return { name => "Jasper" }
+    return return_json( { name => "Jasper" }, param("callback") || undef );
 };
 
 
