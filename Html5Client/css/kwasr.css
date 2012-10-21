@@ -28,6 +28,10 @@ body {
 	margin: 0 8px;
 }
 
+.screen a {
+	cursor: pointer;
+}
+
 nav#main {
 	position: fixed;
 	bottom: 0;
