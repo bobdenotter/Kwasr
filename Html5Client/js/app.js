@@ -48,19 +48,25 @@ App.Location = Ember.Object.extend({
 App.Feature = Ember.Object.extend({
 	loc_id: null,
 	feat_name_slug: null,
-	fea_imdb_id: null,
 	feat_name: null,
+	fea_id: null,
+	fea_photo_url: null,
+	sho_nr_posts: null,
+	fea_imdb_id: null,
+	fea_nr_posts: null,
 	sho_id: null,
 	fea_name_en: null,
-	fea_id: null,
 	sho_start_datetime: null,
 	sho_avg_post_rating: null,
-	fea_lastfm_id: null,
 	sho_end_datetime: null,
-	fea_photo_url: null,
+	fea_lastfm_id: null,
 	feat_description: null,
 	feat_languagecode: null,
-	sho_nr_posts: null
+	fea_avg_post_rating: null,
+	image: function() {
+	    // return 'http://kwasr.net/images/event/small-logo/' + this.get('eve_id') + '.png';
+	    return this.get('fea_photo_url');
+	}.property()	
 });
 
 
@@ -80,7 +86,6 @@ App.eventV = Ember.View.extend(Ember.Metamorph, {
 App.eventsC = Ember.ArrayController.create({
     content: [],
     loadEvents: function() {
-    	var me = this;
     	var url = "http://api.kwasr.net/v1/nl/events";
 		$.ajax({
 			url: url,
@@ -99,6 +104,72 @@ App.eventsC = Ember.ArrayController.create({
 		}, this);
     },
     loadEventsCompleted: function() {
+    	if(xhr.status == 400 || xhr.status == 420) {
+    		alert("API limit reached.");
+     	}
+
+    }
+});
+
+
+App.performanceC = Ember.ArrayController.create({
+    content: [],
+    loadPerformances: function(id) {
+
+    	if (typeof(id)=="undefined") { id = 0;	}
+
+    	var url = "http://api.kwasr.net/v1/nl/event/" + id;
+		
+		$.ajax({
+			url: url,
+			dataType: 'JSONP',
+			context: this,
+			success: this.loadPerformancesSucceeded,
+			completed: this.loadPerformancesCompleted
+		});
+    },
+    loadPerformancesSucceeded: function(data) {
+		this.set('content', []);
+		var features = data.features;
+		features.forEach(function(feature){
+			var e = App.Feature.create(feature);
+			this.pushObject(e);
+		}, this);
+    },
+    loadPerformancesCompleted: function() {
+    	if(xhr.status == 400 || xhr.status == 420) {
+    		alert("API limit reached.");
+     	}
+
+    }
+});
+
+
+
+App.locationsC = Ember.ArrayController.create({
+    content: [],
+    loadLocations: function(id) {
+
+    	if (typeof(id)=="undefined") { id = 0;	}
+
+    	var url = "http://api.kwasr.net/v1/nl/event/" + id;
+		$.ajax({
+			url: url,
+			dataType: 'JSONP',
+			context: this,
+			success: this.loadLocationsSucceeded,
+			completed: this.loadLocationsCompleted
+		});
+    },
+    loadLocationsSucceeded: function(data) {
+		this.set('content', []);
+		var locations = data.locations;
+		locations.forEach(function(locations){
+			var e = App.Location.create(locations);
+			this.pushObject(e);
+		}, this);
+    },
+    loadLocationsCompleted: function() {
     	if(xhr.status == 400 || xhr.status == 420) {
     		alert("API limit reached.");
      	}
