@@ -9,9 +9,6 @@ use I18N::AcceptLanguage;
 use YAML;
 
 
-#set serializer => 'JSON';
-
-
 our $VERSION = '0.1';
 
 use constant {
@@ -77,6 +74,15 @@ get '/:version/:lang/event/:eve_id' => sub {
 		$sth = database->prepare( "SELECT * FROM Feature p, FeatureTrans pt, Showing s WHERE p.fea_id=pt.fea_id AND pt.feat_languagecode=? AND s.fea_id=p.fea_id AND s.loc_id IN ($loc_ids) ORDER BY pt.feat_name ASC, s.sho_start_datetime ASC" );
 		$sth->execute(param('lang'));
 		while( my $row = $sth->fetchrow_hashref() ) { push @features, { %$row } };
+	}
+	my %tf; # temp features
+	foreach my $f (@features) {
+		$tf{$f->{fea_id}}{count} += $f->{sho_nr_posts};
+		$tf{$f->{fea_id}}{avg} += $f->{sho_nr_posts} * $f->{sho_avg_post_rating};
+	} 
+	foreach my $f (@features) {
+		$f->{fea_nr_posts} = $tf{$f->{fea_id}}{count};
+		$f->{fea_avg_post_rating} = $tf{$f->{fea_id}}{count} ? $tf{$f->{fea_id}}{avg} / $tf{$f->{fea_id}}{count} : 0;
 	}
 	
 	return return_json( { locations => \@locs,
