@@ -18,9 +18,10 @@
 <script type="text/x-handlebars">
 
 <button {{action "loadEvents" target="App.eventsC"}}>Load Events</button>
-
+</script>
 <hr>
 
+<script type="text/x-handlebars">
 {{#each App.eventsC}}
 	{{#view}}
 		<h2>pompidom: {{ eve_name_en }} / {{ evet_name }}</h2>

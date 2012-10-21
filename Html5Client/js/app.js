@@ -27,8 +27,40 @@ App.Event = Ember.Object.extend({
 	evet_name_slug: null,
 	evet_official_website: null,
 	logo: function() {
-	    return '//kwasr.net/images/event/small-logo/' + this.get('eve_id') + '.png';
+	    return 'http://kwasr.net/images/event/small-logo/' + this.get('eve_id') + '.png';
 	}.property()	
+});
+
+App.Location = Ember.Object.extend({
+	loc_id: null,
+	loc_radius_meters: null,
+	loct_description: null,
+	loc_name_en: null,
+	loc_latitude: null,
+	loc_longitude: null,
+	eve_id: null,
+	loct_languagecode: null,
+	loct_name_slug: null,
+	loct_name: null,
+	loc_photo_url: null
+});
+
+App.Feature = Ember.Object.extend({
+	loc_id: null,
+	feat_name_slug: null,
+	fea_imdb_id: null,
+	feat_name: null,
+	sho_id: null,
+	fea_name_en: null,
+	fea_id: null,
+	sho_start_datetime: null,
+	sho_avg_post_rating: null,
+	fea_lastfm_id: null,
+	sho_end_datetime: null,
+	fea_photo_url: null,
+	feat_description: null,
+	feat_languagecode: null,
+	sho_nr_posts: null
 });
 
 
@@ -53,15 +85,24 @@ App.eventsC = Ember.ArrayController.create({
 		$.ajax({
 			url: url,
 			dataType: 'JSONP',
-			success: function(data) {
-				me.set('content', []);
-				$(data.events).each(function(index,event){
-					var e = App.Event.create(event);
-					me.pushObject(e);
-					// console.log(event)
-				});
-			}
+			context: this,
+			success: this.loadEventsSucceeded,
+			completed: this.loadEventsCompleted
 		});
+    },
+    loadEventsSucceeded: function(data) {
+		this.set('content', []);
+		var events = data.events;
+		events.forEach(function(event){
+			var e = App.Event.create(event);
+			this.pushObject(e);
+		}, this);
+    },
+    loadEventsCompleted: function() {
+    	if(xhr.status == 400 || xhr.status == 420) {
+    		alert("API limit reached.");
+     	}
+
     }
 });
 
