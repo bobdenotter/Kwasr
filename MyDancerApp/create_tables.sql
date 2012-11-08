@@ -3,15 +3,14 @@ CREATE TABLE kwasr.Event (
 	eve_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	eve_name_en VARCHAR(255) NOT NULL UNIQUE,
 	eve_countrycode CHAR(2) NOT NULL,
-	eve_photo_url VARCHAR(255),
 	eve_start_date DATE NOT NULL,
 	eve_end_date DATE NOT NULL
 )
 COMMENT "Table with global events, like Roskilde";
 
 INSERT INTO kwasr.Event VALUES 
-	(NULL, "IFFR", "NL", "http://upload.wikimedia.org/wikipedia/commons/1/16/Iffr-logo_medium-1.jpg", "2012-10-10", "2012-10-20"),
-	(NULL, "Roskilde", "DK", "http://www.yorkvision.co.uk/wp-content/uploads/2012/06/Roskilde-Festival.jpg", "2013-01-20", "2013-02-02");
+	(NULL, "IFFR", "NL", "2012-10-10", "2012-10-20"),
+	(NULL, "Roskilde", "DK", "2013-01-20", "2013-02-02");
 
 DROP TABLE IF EXISTS kwasr.EventTrans;
 CREATE TABLE kwasr.EventTrans (
@@ -21,7 +20,6 @@ CREATE TABLE kwasr.EventTrans (
 	evet_name_slug VARCHAR(255) NOT NULL,
 	evet_description VARCHAR(65000) NOT NULL,
 	evet_official_website_url VARCHAR(255),
-	evet_map_url VARCHAR(255),
 	UNIQUE KEY (eve_id, evet_languagecode),
 	UNIQUE (evet_name_slug, evet_languagecode)
 )
@@ -33,32 +31,28 @@ INSERT INTO kwasr.EventTrans VALUES (
 	"International film festival Rotterdam",
 	"international_film_festival_rotterdam",
 	"Great film festival in Rotterdam", 
-	"http://www.filmfestivalrotterdam.com/en/",
-	"http://www.filmfestivalrotterdam.com/Assets/Uploads/Images/Festival/festivallocaties2012.png"
+	"http://www.filmfestivalrotterdam.com/en/"
 ),(
 	1, 
 	"nl", 
 	"Internationaal film festival Rotterdam", 
 	"internationaal_film_festival_rotterdam", 
 	"Leuk filmfestival in Rotterdam", 
-	"http://www.filmfestivalrotterdam.com/nl/",
-	"http://www.filmfestivalrotterdam.com/Assets/Uploads/Images/Festival/festivallocaties2012.png"
+	"http://www.filmfestivalrotterdam.com/nl/"
 ),(
 	2,
 	"en", 
 	"Roskilde festival", 
 	"roskilde_festival", 
 	"Big pop festival in roskilde", 
-	"http://roskilde-festival.dk/uk/",
-	"http://www.universitetsradioen.dk/roskilde/1998/kort.jpg"
+	"http://roskilde-festival.dk/uk/"
 ),(
 	2,
 	"nl", 
 	"Roskilde festival", 
 	"roskilde_festival", 
 	"Groot pop festival in roskilde", 
-	"http://roskilde-festival.dk/uk/",
-	"http://www.universitetsradioen.dk/roskilde/1998/kort.jpg"
+	"http://roskilde-festival.dk/uk/"
 );
 
 DROP TABLE IF EXISTS kwasr.Location;
@@ -66,7 +60,6 @@ CREATE TABLE kwasr.Location (
 	loc_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	loc_name_en VARCHAR(255) NOT NULL,
 	eve_id INT NOT NULL,
-	loc_photo_url VARCHAR(255),
 	loc_latitude REAL NOT NULL,
 	loc_longitude REAL NOT NULL,
 	loc_radius_meters INT NOT NULL,
@@ -75,10 +68,10 @@ CREATE TABLE kwasr.Location (
 COMMENT "A location where Showings happen, like orange stage";
 
 INSERT INTO kwasr.Location VALUES 
-	( NULL, "Pathe zaal 1", 1, "", 51.921165,  4.473467, 10 ),
-	( NULL, "Pathe zaal 2", 1, "", 51.921354,  4.473243, 10 ),
-	( NULL, "Orange stage", 2, "", 55.621236, 12.077235, 100 ),
-	( NULL, "Arena",        2, "", 55.6197,   12.083887, 30 );
+	( NULL, "Pathe zaal 1", 1, 51.921165,  4.473467, 10 ),
+	( NULL, "Pathe zaal 2", 1, 51.921354,  4.473243, 10 ),
+	( NULL, "Orange stage", 2, 55.621236, 12.077235, 100 ),
+	( NULL, "Arena",        2, 55.6197,   12.083887, 30 );
 
 DROP TABLE IF EXISTS kwasr.LocationTrans;
 CREATE TABLE kwasr.LocationTrans (
@@ -106,18 +99,17 @@ CREATE TABLE kwasr.Feature (
 	fea_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	fea_name_en VARCHAR(255) NOT NULL,
 	fea_imdb_id INT,
-	fea_lastfm_id VARCHAR(255),
-	fea_photo_url VARCHAR(255)
+	fea_lastfm_id VARCHAR(255)
 )
 COMMENT "the band or movie that is playing";
 
 INSERT INTO kwasr.Feature VALUES
-	( 1, "Pulp Fiction", 110912, NULL, "http://ia.media-imdb.com/images/M/MV5BMjE0ODk2NjczOV5BMl5BanBnXkFtZTYwNDQ0NDg4._V1._SY317_CR4,0,214,317_.jpg" ),
-	( 2, "The Expendables 2", 1764651, NULL, "http://ia.media-imdb.com/images/M/MV5BMTQzODkwNDQxNV5BMl5BanBnXkFtZTcwNTQ1ODAxOA@@._V1._SY317_.jpg"),
-	( 3, "The Hunger games", 1392170, NULL, "http://ia.media-imdb.com/images/M/MV5BMjA4NDg3NzYxMF5BMl5BanBnXkFtZTcwNTgyNzkyNw@@._V1._SY317_.jpg"),
-	( 4, "The Smashing Pumpkins", NULL, "The+Smashing+Pumpkins", "http://userserve-ak.last.fm/serve/500/216737/The+Smashing+Pumpkins+sdsd.jpg"),
-	( 5, "Fatboy Slim", NULL, "Fatboy+Slim", "http://userserve-ak.last.fm/serve/_/10575075/Fatboy+Slim+Fatboy_051103123114921_wideweb.jpg"),
-	( 6, "De Raggende Manne", NULL, "De+Raggende+Manne", "http://userserve-ak.last.fm/serve/_/174346/De+Raggende+Manne.jpg");
+	( 1, "Pulp Fiction"         , 110912 , NULL                   ),
+	( 2, "The Expendables 2"    , 1764651, NULL                   ),
+	( 3, "The Hunger games"     , 1392170, NULL                   ),
+	( 4, "The Smashing Pumpkins", NULL   , "The+Smashing+Pumpkins"),
+	( 5, "Fatboy Slim"          , NULL   , "Fatboy+Slim"          ),
+	( 6, "De Raggende Manne"    , NULL   , "De+Raggende+Manne"    );
 
 
 DROP TABLE IF EXISTS kwasr.FeatureTrans;
