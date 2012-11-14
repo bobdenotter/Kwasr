@@ -7,11 +7,12 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/kwasr.css">
 	
-	<script src="js/libs/jquery-1.7.2.min.js"></script>
-	<script src="js/libs/handlebars-1.0.0.beta.6.js"></script>
-	<script src="js/libs/ember-1.0.pre.min.js"></script>
+	<script src="js/libs/jquery-1.8.2.min.js"></script>
+	<script src="js/libs/handlebars-1.0.rc.1.js"></script>
+    <script src="js/libs/underscore-min.js"></script>
+    <script src="js/libs/json2.js"></script>
+    <script src="js/libs/backbone-min.js"></script>
 	<script src="js/libs/jquery.scrollTo.min.js"></script>
-
 	<script src="js/app.js"></script>
 	<script src="js/frontend.js"></script>
 </head>
@@ -54,26 +55,35 @@
 	<div class="screen" id="settings">
 		<h1>settings</h1>
 
+
+<script id="settings-template" type="text/x-handlebars-template">
+	Hello: {{ hello }}..
+</script>
+
 	</div>
 
 
 	<div class="screen" id="list-events">
 		<h1>list-events</h1>
 
-<script type="text/x-handlebars">
-{{#each App.eventsC}}
-	{{#view}}
-		<h2><a {{bindAttr data-id="eve_id"}}>{{ eve_name_en }} / {{ evet_name }}</a></h2>
-		<p>{{ eve_start_date }} - {{ evet_description }}</p>
-		<img {{bindAttr src="logo"}} witdh="100" height="100" /> 
-	{{/view}}
-{{/each}}
-</script>
+
+<button data-action="eventView.load()">Load Events</button>
 
 
-<script type="text/x-handlebars">
-<button {{action "loadEvents" target="App.eventsC"}}>Load Events</button>
+<div id="eventlistview"><!-- placeholder for event list --></div>
+
+
+<script type="text/x-handlebars" id="eventlisttemplate">
+{{#events}}
+
+	<h2> 
+		<a data-action="eventclick({{eve_id}})">{{ evet_name }} </a>
+	</h2>
+	<p>{{ eve_start_date }} t/m {{ eve_end_date }} - {{ evet_description }}</p>
+	<img src="{{&logo this}}" width="100" height="100" />
+{{/events}}
 </script>
+
 
 	</div>
 
@@ -81,14 +91,17 @@
 	<div class="screen" id="list-performances">
 		<h1>list-performances</h1>
 
-<script type="text/x-handlebars">
-{{#each App.performanceC}}
-	{{#view}}
-		<h2><a {{bindAttr data-id="fea_id"}}>{{ feat_name }} / {{ feat_name }}</a></h2>
-		<p>{{ sho_start_datetime }} - {{ sho_end_datetime }} - {{ feat_description }}</p>
-		<img {{bindAttr src="image"}} witdh="100" height="100" /> 
-	{{/view}}
-{{/each}}
+
+<div id="performancelistview"><!-- placeholder for performances list --></div>
+
+<script type="text/x-handlebars" id="performancelisttemplate">
+{{#performances}}
+	<h2> 
+		<a data-action="performanceclick({{fea_id}})">{{ feat_name }} / {{ feat_name }}</a>
+	</h2>
+	<p>{{ sho_start_datetime }} - {{ sho_end_datetime }} - {{ feat_description }}</p>
+	<img src="{{image}}" width="100" height="100" /> 
+{{/performances}}
 </script>
 
 
