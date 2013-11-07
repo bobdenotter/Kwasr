@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'Hero';
+    src: url('Hero.eot');
+    src: url('Hero.woff') format('woff'),
+    	 url('Hero.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

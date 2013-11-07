@@ -1,0 +1,175 @@
+/* Fonts */
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
+@import url(fonts/hero.css);
+
+body {
+	font: normal normal 100 1.5em/1.5em 'Myriad Pro', 'PT Sans', sans-serif;
+	color: #fff;
+	background-color: rgb(248,118,77);
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+.container {
+	padding: 0 0;
+}
+h1, h2, h3, *::before {
+	font-family: Hero;
+	font-weight: 100;
+}
+
+::selection {
+	background: #000;
+	color: rgb(248,118,77);
+	}
+::-moz-selection {
+	background: #000;
+	color: rgb(248,118,77);
+}
+header {
+	border-bottom: 2px solid #fbb49d;
+}
+header h1, footer h1 {
+	padding-left: 0 !important;	
+	font-size: 1.33em;	
+	font-weight: lighter;
+}
+header menu, footer menu {
+	text-align: right;
+	padding-right: 0 !important;
+}
+.col-md-5.col-md-offset-1 {
+	margin-top: 4em;
+	margin-bottom: 5em;
+}
+.intro {
+	display: block;
+	background: transparent url(images/phone.png) no-repeat 90% 100%;
+}
+.intro h1 {
+	font-size: 9em;
+	letter-spacing: -.05em;
+}
+.intro p {
+	font-size: 1.4666em;
+}
+.btn-info {
+	background: rgb(20,199,175);
+	font-weight: 100;
+	text-align: left;
+	line-height: 2em;
+	padding: .75em 1.4em 1.25em 7em;
+	position: relative;
+	margin-top: 1.5em;
+	margin-left: 0;
+	box-shadow: inset 40px 0px 0px rgba(0,0,0,.05), inset 80px 0px 0px rgba(0,0,0,.1);
+}
+.btn-info::before {
+	content: "K";
+	color: rgb(248,118,77);
+	position: absolute;
+	background-color: #fff;
+	border-radius: 200px;
+	font-size: 2.75em;
+	width: 1.5em;
+	height: 1.5em;
+	line-height: 1.75em;
+	text-align: center;
+	top: .4em;
+	left: 10px;
+}
+.btn-info i {
+	display: block;
+	font-style: normal;
+	font-size: 3em;
+	margin-left: -3px;
+}
+.btn-info:hover {
+	background-color: #fff;
+	color: rgb(248,118,77);
+}
+.btn-info:hover::before {
+	color: #fff;
+	background-color: rgb(20,199,175);
+}
+.map {
+	position: relative;
+	height: 625px;
+	display: block;
+	margin: 0 !important;
+	overflow: hidden;
+	border-top: 7px solid #000;
+	background-color: #14c7af;
+}
+#mapbox {
+	display: block;
+	height: 650px;
+	margin: 0 auto;
+	background-color: white;
+	position: absolute; 
+	top: 0; left: 0; right: 0; bottom: -25px;
+}
+article {
+	font-size: 1em;
+	z-index: 99;
+	background-color: rgb(248,118,77);
+	position: absolute;
+	top: 420px;
+	left: -30px;
+}
+article h1 {
+	color: #000;
+	font-size: 1.2em;
+	font: normal normal 100 1.5em/1.5em 'Myriad Pro', 'PT Sans', sans-serif;
+}
+.screen {
+	background-color: #000;
+	padding-top: 5em;
+	text-align: center;
+}
+.screen img {
+	position: relative; top: 1px; z-index: 1;
+}
+.download {
+	background-color: rgb(20,199,175);
+	padding: 15em 0 20em;
+	text-align: center;
+	outline: 1px solid #432049;
+	position: relative;
+}
+.download .btn {
+	zoom: 2;
+	background-color: rgb(248,118,77);
+}
+.download .btn::before {
+	color: rgb(20,199,175);
+}
+.download .btn:hover {
+	background-color: #fff;
+	color: rgb(248,118,77);
+}
+.download .btn:hover::before {
+	background-color: rgb(248,118,77);
+	color: #fff;
+}
+
+footer {
+	display: block;
+	width: 95%;
+	position: absolute;
+	bottom: 0px;
+	left: 2.5%;
+	padding: 0 5px;
+	border-top: 2px solid rgba(255,255,255,.33);
+}
+footer h1 {
+	text-align: left;
+}
+footer a {
+	color: #fff;
+	margin-left: 10px;
+	line-height: 2.5em;
+}
+
+.orange {color: rgb(248,118,77);}
+.green {color: rgb(20,199,175);}
+.green-highlight {color: rgb(49,206,185);}
