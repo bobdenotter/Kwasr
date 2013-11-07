@@ -32,6 +32,7 @@ header h1, footer h1 {
 	padding-left: 0 !important;	
 	font-size: 1.33em;	
 	font-weight: lighter;
+	line-height: 1.5em;
 }
 header menu, footer menu {
 	text-align: right;
